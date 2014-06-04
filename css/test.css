@@ -1,0 +1,15 @@
+article > div {
+  float: left;
+  width: 348px;
+  margin-right: 24px;
+  margin-bottom: 24px;
+  padding: 24px;
+  background: #FFF;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+article > aside {
+  float: right;
+  width: 228px;
+}
