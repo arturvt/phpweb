@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89800e9d-0305-404c-bcf3-dac101be5698" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/bootstrappage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/places.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/test.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/test2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/europe.html" afterPath="$PROJECT_DIR$/pages/europe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/functions.js" afterPath="$PROJECT_DIR$/javascript/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/js/scripts.js" afterPath="$PROJECT_DIR$/pages/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/css/styles.css" afterPath="$PROJECT_DIR$/pages/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/css/styles.less" afterPath="$PROJECT_DIR$/pages/css/styles.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phpweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="705">
+            <state line="15" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
@@ -47,7 +37,7 @@
       <file leaf-file-name="europe.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/europe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="13" selection-start="1233" selection-end="1233" vertical-scroll-proportion="-15.708333" vertical-offset="328" max-vertical-offset="900">
+            <state line="47" column="13" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -56,7 +46,7 @@
       <file leaf-file-name="functions.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state line="7" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="270">
               <folding />
             </state>
           </provider>
@@ -65,7 +55,7 @@
       <file leaf-file-name="scripts.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="48" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+            <state line="10" column="48" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="495">
               <folding />
             </state>
           </provider>
@@ -83,7 +73,7 @@
       <file leaf-file-name="bootstrappage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/bootstrappage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="22" selection-start="884" selection-end="884" vertical-scroll-proportion="0.39685315" vertical-offset="238" max-vertical-offset="870">
+            <state line="19" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.49825174" vertical-offset="0" max-vertical-offset="870">
               <folding />
             </state>
           </provider>
@@ -233,7 +223,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="277" y="253" width="1699" height="1000" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -248,11 +238,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -274,70 +264,28 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="45" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="675">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/test2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.20979021" vertical-offset="0" max-vertical-offset="572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="17" selection-start="210" selection-end="210" vertical-scroll-proportion="0.39335665" vertical-offset="0" max-vertical-offset="572">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/places.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="34" selection-start="761" selection-end="761" vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="238" selection-end="238" vertical-scroll-proportion="0.30201343" vertical-offset="0" max-vertical-offset="596">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+        <state line="15" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/europe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1233" selection-end="1233" vertical-scroll-proportion="-15.708333" vertical-offset="328" max-vertical-offset="900">
+        <state line="47" column="13" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="270">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="48" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="705">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/css/styles.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="23" selection-start="985" selection-end="985" vertical-scroll-proportion="0.7867133" vertical-offset="0" max-vertical-offset="1425">
+        <state line="10" column="48" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="495">
           <folding />
         </state>
       </provider>
@@ -351,7 +299,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/bootstrappage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="22" selection-start="884" selection-end="884" vertical-scroll-proportion="0.39685315" vertical-offset="238" max-vertical-offset="870">
+        <state line="19" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="45" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/test2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="88" selection-end="88" vertical-scroll-proportion="0.20979021" vertical-offset="0" max-vertical-offset="572" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="17" selection-start="210" selection-end="210" vertical-scroll-proportion="0.39335665" vertical-offset="0" max-vertical-offset="572" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/places.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="34" selection-start="761" selection-end="761" vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="1" selection-start="238" selection-end="238" vertical-scroll-proportion="0.30201343" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/europe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="13" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="48" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/css/styles.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="23" selection-start="985" selection-end="985" vertical-scroll-proportion="0.7867133" vertical-offset="0" max-vertical-offset="1425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="17" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/bootstrappage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.49825174" vertical-offset="0" max-vertical-offset="870">
           <folding />
         </state>
       </provider>
