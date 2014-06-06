@@ -1,7 +1,64 @@
 /* Mixin */
+.gradients {
+  background: #eaeaea;
+  background: linear-gradient(top, #eaeaea, #cccccc);
+  background: -o-linear-gradient(top, #eaeaea, #cccccc);
+  background: -ms-linear-gradient(top, #eaeaea, #cccccc);
+  background: -moz-linear-gradient(top, #eaeaea, #cccccc);
+  background: -webkit-linear-gradient(top, #eaeaea, #cccccc);
+}
 /* Implementation */
 #travel-details {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  background-color: #663333;
+  background-image: -webkit-linear-gradient(left, #663333, #333333);
+  background-image: -moz-linear-gradient(left, #663333, #333333);
+  background-image: -o-linear-gradient(left, #663333, #333333);
+  background-image: -ms-linear-gradient(left, #663333, #333333);
+  background-image: linear-gradient(left, #663333, #333333);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+#travel-details h1 {
+  color: yellow;
+}
+#travel-details h2 {
+  color: lightpink;
+}
+header {
+  background-color: #000000;
+}
+header nav {
+  background-color: #0000ff;
+}
+header nav a {
+  color: #0000ff;
+}
+.highlight {
+  background-color: yellow;
+}
+.class1 {
+  background-color: #2d5e8b;
+}
+.class1 div {
+  color: #2d5e8b;
+}
+.class2 {
+  background-color: #fff;
+  color: #2d5e8b;
+}
+.class2 li {
+  color: purple;
+}
+#div-button {
+  border: 1px solid #2d5e8b;
+  width: 60;
+  height: 90;
+  align-items: center;
+  font-size: 25;
+}
+#div-button input {
+  color: cadetblue;
 }

@@ -8,6 +8,8 @@ $(document).ready(function() {
 
     $("#greek:even").css("color","green");
 
+    $("#france > li").last().addClass("highlight");
+
     $(function() {
         $( "#check" ).button();
         $( "#format" ).buttonset();
@@ -16,6 +18,8 @@ $(document).ready(function() {
     $("button").click(function() {
         $("h1").hide();
     });
+
+
 
     $("#button-back").click(function() {
        window.history.go(-1);
