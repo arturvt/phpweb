@@ -25,3 +25,8 @@ $(document).ready(function() {
        window.history.go(-1);
     });
 });
+
+
+ function showDateAction() {
+     document.getElementById("demo").innerHTML = Date();
+}
