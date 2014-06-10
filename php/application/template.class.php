@@ -60,7 +60,6 @@ class Template {
         //load variables
         foreach ($this->vars as $key => $value)
         {
-            // the double dollar sign means that we're creating another variable using the keys value. Amazing!
             $$key = $value;
         }
     }

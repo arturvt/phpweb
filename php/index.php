@@ -18,3 +18,4 @@ include 'includes/init.php';
 
 /*** set the path to the controllers directory ***/
 $router->setPath (__SITE_PATH . 'controller');
+
