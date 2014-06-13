@@ -1,51 +1,90 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title> JQuery Visual Page test</title>
-    <script>
-    function loadXMLDoc()
-    {
-    var xmlhttp;
-    if (window.XMLHttpRequest)
-      {// code for IE7+, Firefox, Chrome, Opera, Safari
-      xmlhttp=new XMLHttpRequest();
-      }
-    else
-      {// code for IE6, IE5
-      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-      }
-    xmlhttp.onreadystatechange=function()
-      {
-      if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title> JQuery Visual Page test</title>
+        <script>
+
+        var isHttpRequest = window.XMLHttpRequest;
+
+        function loadTXTDoc(fileName)
         {
-        document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+            var txtHttp;
+            if (isHttpRequest)
+              {// code for IE7+, Firefox, Chrome, Opera, Safari
+                  txtHttp=new XMLHttpRequest();
+              }
+              else
+              {// code for IE6, IE5
+                  txtHttp=new ActiveXObject("Microsoft.XMLHTTP");
+              }
+              txtHttp.onreadystatechange=function()
+              {
+                  if (txtHttp.readyState==4 && txtHttp.status==200)
+                  {
+                    document.getElementById("toChange").innerHTML=txtHttp.responseText;
+                }
+            }
+            txtHttp.open("GET","../xmls/"+fileName,true);
+            txtHttp.send();
         }
-      }
-    xmlhttp.open("GET","ajax_info.txt",true);
-    xmlhttp.send();
-    }
-</script>
 
-</head>
-<body>
+        function loadXML(fileName) {
+            var xmlhttp;
+            var txt,nameList,i;
+            if (window.XMLHttpRequest)
+              {// code for IE7+, Firefox, Chrome, Opera, Safari
+              xmlhttp=new XMLHttpRequest();
+              }
+            else
+              {// code for IE6, IE5
+              xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+              }
+            xmlhttp.onreadystatechange=function()
+              {
+              if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                {
+                xmlDoc=xmlhttp.responseXML;
+                txt="";
+                nameList=xmlDoc.getElementsByTagName("ARTIST");
+                var countryList=xmlDoc.getElementsByTagName("COUNTRY");
+                var line;
+                for (i=0;i<nameList.length;i++)
+                  {
+                    line = '<p>Artist: '+nameList[i].childNodes[0].nodeValue + ' - '+countryList[i].childNodes[0].nodeValue+"</p>";
+                    txt+=line;
+                  }
+                document.getElementById("toChange").innerHTML=txt;
+                }
+              }
+            xmlhttp.open("GET","../xmls/"+fileName,true);
+            xmlhttp.send();
 
+        }
+        </script>
 
+    </head>
+    <body>
+        <button>A button element</button>
+        <input type="submit" value="A submit button">
 
-<button>A button element</button>
-<input type="submit" value="A submit button">
+        <a href="#">An anchor</a>
+        <a id="back" href="europe.html">Back to index</a>
 
-<a href="#">An anchor</a>
-<a id="back" href="europe.html">Back to index</a>
-
-<div id="format">
-    <h1>Select the options above:</h1><br>
-    <input type="checkbox" id="check1"><label for="check1">B</label>
-    <input type="checkbox" id="check2"><label for="check2">I</label>
-    <input type="checkbox" id="check3"><label for="check3">U</label>
-</div>
-<br>
-<br>
-<div id="myDiv"><h2>Let AJAX change this text</h2></div>
-<button type="button" onclick="loadXMLDoc()">Change Content</button>
-</body>
-</html>
+        <div id="format">
+            <h1>Select the options above:</h1><br>
+            <input type="checkbox" id="check1"><label for="check1">B</label>
+            <input type="checkbox" id="check2"><label for="check2">I</label>
+            <input type="checkbox" id="check3"><label for="check3">U</label>
+        </div>
+        <br>
+        <br>
+        <div id="ajax">
+            <h2>Ajax Area</h2>
+            <button type="button" onclick='loadTXTDoc("ajax_info.txt")' >Change Content (TXT File)</button>
+            <br>
+            <button type="button" onclick='loadXML("cd_catalog.xml")' >Change Content (XML File)</button>
+        </div>
+        <h2>My CD Collection:</h2>
+        <div id="toChange"></div>
+    </body>
+    </html>
