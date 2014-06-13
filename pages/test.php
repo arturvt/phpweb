@@ -12,5 +12,7 @@
     }
 }
 
-echo ("asdada");
+echo ("asdada <br>");
 printSomething();
+
+echo "dddasdada <br>";

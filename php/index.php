@@ -1,4 +1,9 @@
 <?php
+
+echo "welcome";
+
+/* Depois ver isto aqui em baixo. */
+
 /**
  * Created by PhpStorm.
  * User: Artur
@@ -19,3 +24,4 @@ include 'includes/init.php';
 /*** set the path to the controllers directory ***/
 $router->setPath (__SITE_PATH . 'controller');
 
+echo "welcome";
