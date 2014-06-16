@@ -1,68 +1,20 @@
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html lang="eng">
     <head>
+        <meta charset="utf-8">
         <title> JQuery Visual Page test</title>
-        <script>
-
-        var isHttpRequest = window.XMLHttpRequest;
-
-        function loadTXTDoc(fileName)
-        {
-            var txtHttp;
-            if (isHttpRequest)
-              {// code for IE7+, Firefox, Chrome, Opera, Safari
-                  txtHttp=new XMLHttpRequest();
-              }
-              else
-              {// code for IE6, IE5
-                  txtHttp=new ActiveXObject("Microsoft.XMLHTTP");
-              }
-              txtHttp.onreadystatechange=function()
-              {
-                  if (txtHttp.readyState==4 && txtHttp.status==200)
-                  {
-                    document.getElementById("toChange").innerHTML=txtHttp.responseText;
-                }
-            }
-            txtHttp.open("GET","../xmls/"+fileName,true);
-            txtHttp.send();
+        <style>
+        p {
+          color: red;
+          margin: 5px;
+          cursor: pointer;
         }
-
-        function loadXML(fileName) {
-            var xmlhttp;
-            var txt,nameList,i;
-            if (window.XMLHttpRequest)
-              {// code for IE7+, Firefox, Chrome, Opera, Safari
-              xmlhttp=new XMLHttpRequest();
-              }
-            else
-              {// code for IE6, IE5
-              xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-              }
-            xmlhttp.onreadystatechange=function()
-              {
-              if (xmlhttp.readyState==4 && xmlhttp.status==200)
-                {
-                xmlDoc=xmlhttp.responseXML;
-                txt="";
-                nameList=xmlDoc.getElementsByTagName("ARTIST");
-                var countryList=xmlDoc.getElementsByTagName("COUNTRY");
-                var line;
-                for (i=0;i<nameList.length;i++)
-                  {
-                    line = '<p>Artist: '+nameList[i].childNodes[0].nodeValue + ' - '+countryList[i].childNodes[0].nodeValue+"</p>";
-                    txt+=line;
-                  }
-                document.getElementById("toChange").innerHTML=txt;
-                }
-              }
-            xmlhttp.open("GET","../xmls/"+fileName,true);
-            xmlhttp.send();
-
+        p:hover {
+          background: yellow;
         }
-        </script>
-
-    </head>
+        </style>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
     <body>
         <button>A button element</button>
         <input type="submit" value="A submit button">
@@ -80,11 +32,63 @@
         <br>
         <div id="ajax">
             <h2>Ajax Area</h2>
-            <button type="button" onclick='loadTXTDoc("ajax_info.txt")' >Change Content (TXT File)</button>
+            <button type="button" onclick='myFunction()' >Change Content (TXT File)</button>
             <br>
-            <button type="button" onclick='loadXML("cd_catalog.xml")' >Change Content (XML File)</button>
+            <button type="button" onclick='myFunction("cd_catalog.xml")' >Change Content (XML File)</button>
         </div>
         <h2>My CD Collection:</h2>
         <div id="toChange"></div>
-    </body>
-    </html>
+        <div id="testarea">
+          <p id="fp">First paragraph</p>
+          <p>Second paragraph</p>
+          <p>Third paragraph</p>
+          <a id="showalert" >ShowAlert</a>
+        </div>
+        <div id="target">
+          click here
+        </div>
+
+     <script>
+
+        // Testing function as an object
+         var func_multiply = new Function("arg1", "arg2", "return arg1 * arg2");
+
+        $("#target").click(function() {
+          alert("Handler for .click() called. Multiply: " + func_multiply(4,2));
+        });
+
+        console.log("stating....");
+
+        // -- About callbacks --
+
+        var xmlhttp;
+        function loadXMLDoc(url,cfunc)
+        {
+        if (window.XMLHttpRequest)
+          {// code for IE7+, Firefox, Chrome, Opera, Safari
+          xmlhttp=new XMLHttpRequest();
+          }
+        else
+          {// code for IE6, IE5
+          xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+          }
+        xmlhttp.onreadystatechange=cfunc;
+        xmlhttp.open("GET",url,true);
+        xmlhttp.send();
+        }
+        function myFunction()
+        {
+        loadXMLDoc("../xmls/ajax_info.txt",function()
+          {
+          if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+            document.getElementById("toChange").innerHTML=xmlhttp.responseText;
+            }
+          });
+        }          
+        
+        
+    </script>
+
+  </body>
+</html>
