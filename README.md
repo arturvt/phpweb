@@ -1,4 +1,4 @@
-CodeShp
+CodeShip
 =================================================
 This application is used to test several web languages and also frameworks.
 
