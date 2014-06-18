@@ -35,6 +35,7 @@ $a[]="Violet";
 $a[]="Liza";
 $a[]="Elizabeth";
 $a[]="Ellen";
+$a[]="Edith";
 $a[]="Wenche";
 $a[]="Vicky";
 
@@ -42,15 +43,16 @@ $a[]="Vicky";
 $q=$_REQUEST["q"]; $hint="";
 
 // lookup all hints from array if $q is different from ""
-if ($q !== "")
-{ $q=strtolower($q); $len=strlen($q);
-    foreach($a as $name)
-    { if (stristr($q, substr($name,0,$len)))
-    { if ($hint==="")
-    { $hint=$name; }
-    else
-    { $hint .= ", $name"; }
-    }
+if ($q !== "") {
+    $q=strtolower($q); $len=strlen($q);
+    foreach($a as $name) {
+        if (stristr($q, substr($name,0,$len))) {
+            if ($hint==="") {
+                $hint=$name;
+            } else {
+                $hint .= ", $name";
+            }
+        }
     }
 }
 

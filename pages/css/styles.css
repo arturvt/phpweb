@@ -46,6 +46,20 @@ header nav a {
 .class1 div {
   color: #2d5e8b;
 }
+.class1 div desc {
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 5px;
+}
+.class1 div img {
+  height: 100px;
+  padding: 5px;
+  text-align: center;
+}
+.class1 div images {
+  display: inline;
+}
 .class2 {
   background-color: #fff;
   color: #2d5e8b;

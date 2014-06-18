@@ -19,6 +19,11 @@
     <br>
     <!-- JSON  RSS feed area  -->
     <div class="middle">
+        <h1>Images from flicker bellow</h1>
+        <div class="middle" id="images"></div>
+    </div>
+    <br>
+    <div class="middle">
         <strong>JSON RSS feed about Codecademy:</strong>
         <div id="jsonfiledname"></div>
         <p>Down here goes the entire Json</p>
@@ -48,23 +53,51 @@
             xmlhttp.send();
         }
 
+        $(function(){
+            var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+            $.getJSON( flickerAPI, {
+                tags: "mount rainier",
+                tagmode: "any",
+                format: "json"
+            }).done(function(data) {
+                var images = [];
+                var links = [];
+                var divs = [];
+                $.each(data.items, function(i, item) {
+                   images.push($("<img>").attr({
+                       src: item.media.m,
+                       title: 'Author: '+item.author+ '\nTaken:' + item.date_taken,
+                       alt: 'Flikr'
+                   }));
+
+                   divs.push($("<div>").attr("class", "desc").text(item.title));
+                   links.push($("<a>").attr("href", item.link).html(images[i]).append(divs[i]));
+
+                    if (i == 5) {
+                        return false;
+                    }
+                });
+
+
+                $("#images").html(links);
+            });
+        });
+
         // JSON RSS Feed Function
         $(function() {
             $.getJSON("https://ajax.googleapis.com/ajax/services/feed/find?v=1.0&q=codecademy&callback=?", function(response) {
                 var items = [];
-                $.each(response, function( key, val) {
-                   items.push("<li id='"+key+"'>"+val+"</li>");
+                $.each(response.responseData.entries, function( key, item) {
+                   items.push("<li id='"+key+"'>"+item.title+"</li>");
                 });
 
-                $("#jsonfiledname").append(items);
+                $("#newsfeed").append(items);
 
-                // list all file
-                $('#newsfeed').html(JSON.stringify(response));
-            })
-        })
+
+            });
+        });
+
     </script>
-
-
         <script src="../javascript/jquery-1.11.1.min.js"></script>
     </body>
 </html>
