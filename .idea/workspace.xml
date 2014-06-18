@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="89800e9d-0305-404c-bcf3-dac101be5698" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ajaxphptest.html" afterPath="$PROJECT_DIR$/pages/ajaxphptest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/europe.html" afterPath="$PROJECT_DIR$/pages/europe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/css/styles.css" afterPath="$PROJECT_DIR$/pages/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/css/styles.less" afterPath="$PROJECT_DIR$/pages/css/styles.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phpweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +37,7 @@
       <file leaf-file-name="ajaxphptest.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/ajaxphptest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="10" selection-start="659" selection-end="659" vertical-scroll-proportion="0.26234567" vertical-offset="0" max-vertical-offset="975">
+            <state line="34" column="13" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.4226804" vertical-offset="100" max-vertical-offset="1125">
               <folding />
             </state>
           </provider>
@@ -60,7 +56,10 @@
         <entry file="file://$PROJECT_DIR$/pages/css/styles.less">
           <provider selected="true" editor-type-id="text-editor">
             <state line="64" column="22" selection-start="1430" selection-end="1430" vertical-scroll-proportion="-3.0363636" vertical-offset="793" max-vertical-offset="1800">
-              <folding />
+              <folding>
+                <marker date="1403011593000" expanded="true" signature="2092:2178" placeholder="{...}" />
+                <marker date="1403011593000" expanded="true" signature="2190:2242" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,17 +109,17 @@
         <option value="$PROJECT_DIR$/pages/asia.html" />
         <option value="$PROJECT_DIR$/php/gethint.php" />
         <option value="$PROJECT_DIR$/pages/europe.html" />
-        <option value="$PROJECT_DIR$/pages/ajaxphptest.html" />
         <option value="$PROJECT_DIR$/pages/css/styles.less" />
+        <option value="$PROJECT_DIR$/pages/ajaxphptest.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="786" />
-    <option name="y" value="30" />
-    <option name="width" value="1157" />
-    <option name="height" value="1095" />
+    <option name="x" value="1560" />
+    <option name="y" value="61" />
+    <option name="width" value="1002" />
+    <option name="height" value="1093" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -320,7 +319,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="786" y="30" width="1157" height="1095" extended-state="0" />
+    <frame x="1560" y="61" width="1002" height="1093" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -627,7 +626,10 @@
     <entry file="file://$PROJECT_DIR$/pages/css/styles.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="22" selection-start="1430" selection-end="1430" vertical-scroll-proportion="-3.0363636" vertical-offset="793" max-vertical-offset="1800">
-          <folding />
+          <folding>
+            <marker date="1403011593000" expanded="true" signature="2092:2178" placeholder="{...}" />
+            <marker date="1403011593000" expanded="true" signature="2190:2242" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -640,7 +642,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/ajaxphptest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="659" selection-end="659" vertical-scroll-proportion="0.26234567" vertical-offset="0" max-vertical-offset="975">
+        <state line="34" column="13" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.4226804" vertical-offset="100" max-vertical-offset="1125">
           <folding />
         </state>
       </provider>

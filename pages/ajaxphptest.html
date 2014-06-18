@@ -20,6 +20,8 @@
     <!-- JSON  RSS feed area  -->
     <div class="middle">
         <strong>JSON RSS feed about Codecademy:</strong>
+        <div id="jsonfiledname"></div>
+        <p>Down here goes the entire Json</p>
         <div id="newsfeed" class="feed"> </div>
     </div>
 
@@ -49,6 +51,14 @@
         // JSON RSS Feed Function
         $(function() {
             $.getJSON("https://ajax.googleapis.com/ajax/services/feed/find?v=1.0&q=codecademy&callback=?", function(response) {
+                var items = [];
+                $.each(response, function( key, val) {
+                   items.push("<li id='"+key+"'>"+val+"</li>");
+                });
+
+                $("#jsonfiledname").append(items);
+
+                // list all file
                 $('#newsfeed').html(JSON.stringify(response));
             })
         })
