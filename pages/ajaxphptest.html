@@ -20,14 +20,14 @@
     <!-- JSON  RSS feed area  -->
     <div class="middle">
         <h1>Images from flicker bellow</h1>
-        <div class="middle" id="images"></div>
+        <div class="images" id="images"></div>
     </div>
     <br>
     <div class="middle">
         <strong>JSON RSS feed about Codecademy:</strong>
         <div id="jsonfiledname"></div>
         <p>Down here goes the entire Json</p>
-        <div id="newsfeed" class="feed"> </div>
+        <div id="newsfeed" class="feed"></div>
     </div>
 
     <script>
@@ -73,7 +73,7 @@
                    divs.push($("<div>").attr("class", "desc").text(item.title));
                    links.push($("<a>").attr("href", item.link).html(images[i]).append(divs[i]));
 
-                    if (i == 5) {
+                    if (i == 3) {
                         return false;
                     }
                 });
@@ -82,6 +82,7 @@
                 $("#images").html(links);
             });
         });
+
 
         // JSON RSS Feed Function
         $(function() {
