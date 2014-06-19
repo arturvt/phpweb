@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ajaxphptest.html" afterPath="$PROJECT_DIR$/pages/ajaxphptest.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/css/styles.css" afterPath="$PROJECT_DIR$/pages/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/css/styles.less" afterPath="$PROJECT_DIR$/pages/css/styles.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phpweb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +31,7 @@
       <file leaf-file-name="twigtest.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/twigtest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+            <state line="24" column="0" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -39,16 +40,7 @@
       <file leaf-file-name="ajaxphptest.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/ajaxphptest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="0" selection-start="2572" selection-end="2572" vertical-scroll-proportion="0.42783505" vertical-offset="650" max-vertical-offset="1635">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/css/styles.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="19" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="2175">
+            <state line="14" column="85" selection-start="577" selection-end="577" vertical-scroll-proportion="0.21649484" vertical-offset="0" max-vertical-offset="1635">
               <folding />
             </state>
           </provider>
@@ -97,7 +89,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1172" />
+    <option name="x" value="1170" />
     <option name="y" value="61" />
     <option name="width" value="1390" />
     <option name="height" value="1093" />
@@ -322,7 +314,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1172" y="61" width="1390" height="1093" extended-state="0" />
+    <frame x="1170" y="61" width="1390" height="1093" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -338,11 +330,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -360,9 +352,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33956134" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32865733" sideWeight="0.49878147" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -616,9 +608,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/gethint.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="145" selection-end="145" vertical-scroll-proportion="0.077319585" vertical-offset="0" max-vertical-offset="970">
-          <folding />
-        </state>
+        <state line="10" column="16" selection-start="145" selection-end="145" vertical-scroll-proportion="0.077319585" vertical-offset="0" max-vertical-offset="970" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/europe.html">
@@ -637,14 +627,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/css/styles.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="19" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.0" vertical-offset="755" max-vertical-offset="2175">
+        <state line="77" column="1" selection-start="1628" selection-end="1628" vertical-scroll-proportion="-0.020618556" vertical-offset="1175" max-vertical-offset="2145">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/ajaxphptest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2572" selection-end="2572" vertical-scroll-proportion="0.42783505" vertical-offset="650" max-vertical-offset="1635">
+        <state line="14" column="85" selection-start="577" selection-end="577" vertical-scroll-proportion="0.21649484" vertical-offset="0" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>

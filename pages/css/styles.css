@@ -60,9 +60,7 @@ header nav a {
 #images {
   display: inline;
   align-items: center;
-  background-color: red;
-  color: red;
-  margin: 1%;
+  padding: 1%;
   border: 1px solid #ffffff;
 }
 #images a {

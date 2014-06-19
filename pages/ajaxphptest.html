@@ -30,6 +30,7 @@
         <div id="newsfeed" class="feed"></div>
     </div>
 
+
     <script>
         // Hints function for the title div. Uses PHP
         function showHints(str) {
@@ -70,16 +71,15 @@
                        alt: 'Flikr'
                    }));
 
-                   divs.push($("<div>").attr("class", "desc").text(item.title));
-                   links.push($("<a>").attr("href", item.link).html(images[i]).append(divs[i]));
+                   divs.push($("<p>").attr("class", "desc").text(item.title));
+                   links.push($("<a>").attr("href", item.link).html(images[i]));
 
                     if (i == 3) {
                         return false;
                     }
                 });
-
-
                 $("#images").html(links);
+
             });
         });
 
