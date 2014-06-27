@@ -17,6 +17,40 @@
         <p>Suggestions: <span id="txtHint"></span></p>
     </div>
     <br>
+    <div class="middle">
+        <h1>Here some PHP code</h1>
+
+        <?php
+
+        $sentence = array("I'm ", "learning ", "PHP!");
+        echo "<p>Something in real PHP down here </p>";
+
+        foreach ($sentence as $word) {
+          echo $word;
+        };
+        print "aarray";
+        ?>
+        <h2>Down here some coins</h2>
+        <?php
+
+        $headCount = 0;
+        $flipCount = 0;
+        while ($headCount < 3) {
+            $flip = rand(0,1);
+            $flipCount ++;
+            if ($flip){
+                $headCount ++;
+                echo "<div class=\"coin\">H</div>";
+            } else {
+                $headCount = 0;
+                echo "<div class=\"coin\">T</div>";
+            }
+        }
+        echo "<p>It took {$flipCount} flips!</p>";
+        ?>
+
+    </div>
+    <br>
     <!-- JSON  RSS feed area  -->
     <div class="middle">
         <h1>Images from flicker bellow</h1>
