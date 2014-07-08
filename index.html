@@ -3,38 +3,114 @@
 <head>
     <meta charset="utf-8">
     <title>Artur' web page</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/test.css" media="screen">
     <script src="javascript/jquery-1.11.1.js" ></script>
     <script src="javascript/functions.js" ></script>
+    <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
 
 </head>
 <body>
 <div id="homepage-wrapper">
-    <h1>Initial text</h1>
-    <h2>Bellow here should load jquery and php</h2>
-    <p id="loading-jquery"> Loading Jquery....<span>.....</span></p>
+    <div class="jumbotron">
+        <h1>Hi using bootstrap!</h1>
+        <p>initial page</p>
+        <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+    </div>
     <p id="PHP is Down">PHP is down</p>
+    <p>Testing</p>
+    <?php
+        echo "<p>Hello from PHP</p>";
+    ?>
 </div>
 
-<div id="vacations-wrapper">
+<div  class="visual-div" id="vacations-wrapper">
     <h1>Vacation list</h1>
     <ul id="vacations">
-        <li class="vacation america">
+        <li class="vacation-america">
+            <h2>America</h2>
             <a href="pages/ajaxphptest.html"><h2>San Francisco, California</h2></a>
             <span class="details">$400</span>
         </li>
-        <li class="vacation europe">
+        <li class="vacation-europe">
+            <h2>Europe</h2>
             <a id="europe" href="pages/europe.html"><h2>London, England</h2></a>
             <span class="details">$400</span>
         </li>
-        <li class="vacation asia">
+        <li class="vacation-asia">
+            <h2>Asia</h2>
             <a id="asia" href="pages/asia.html" > <h2>Shanghai, China</h2></a>
             <span class="details">$400</span>
         </li>
     </ul>
 </div>
-<div id="button-div">
-    <button id="button-function">function</button>
+<div class="visual-div" id="middle-div">
+    <h1>Bellow another list</h1>
+    <h2>More over</h2>
+    <div class="squares" style="background-color:red"> RED</div>
+    <div class="squares" style="background-color:blue"> BLUE</div>
+    <div class="squares" style="background-color:green"> GREEN</div>
+</div>
+
+<div class="visual-div">
+   <h1>Bellow we will see some bootstrap</h1>
+    <div class="dropdown">
+        <h2>Menu dropdown</h2>
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Dropdown
+        <span class="caret" />
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelleaby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div>
+
+    <h3>Buttons</h3>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+
+    </div>
+    <br><br>
+    <div>
+        <span class="label label-default">Default</span>
+        <br><br>
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active">
+                <a href="#">
+                    <span class="badge pull-right">42</span>
+                    Home
+                </a>
+            </li>
+            ...
+        </ul>
+    </div>
+
+</div>
+
+<div class="visual-div">
+    <h1>Last Div</h1>
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="images/image001.jpg"  alt="...">
+                <img src="images/pumpkin.gif"  alt="...">
+                <img src="images/image-earth.jpg" data-src="holder.js/200%x280" alt="...">
+                <img src="images/image-lion.jpg" data-src="holder.js/100%x180" alt="...">
+                <img src="images/image-penguins.jpg" data-src="holder.js/100%x180" alt="...">
+                <img src="images/image-sun.jpg" data-src="holder.js/100%x180" alt="...">
+                <img src="images/image-extra.jpg" data-src="holder.js/100%x180" alt="...">
+            </a>
+        </div>
+        ...
+    </div>
 </div>
 
 
