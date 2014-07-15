@@ -12,8 +12,9 @@ $(document).ready(function() {
     $('.vacation-asia').after(asiatip);
 
     $('button.continue').html('Next step...');
-
-
+    $("#php-up").click(function() {
+        location.href="pages/responsive.php";
+    });
 
 });
 

@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89800e9d-0305-404c-bcf3-dac101be5698" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/main-page.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/responsive.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/functions.js" afterPath="$PROJECT_DIR$/javascript/functions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main-page.html" afterPath="$PROJECT_DIR$/main-page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phpweb.iws" />
@@ -30,16 +31,34 @@
       <file leaf-file-name="main-page.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main-page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
+            <state line="21" column="19" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="functions.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascript/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.23166023" vertical-offset="0" max-vertical-offset="1036">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsive.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/responsive.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="24" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="23" selection-start="111" selection-end="111" vertical-scroll-proportion="0.115830116" vertical-offset="0" max-vertical-offset="1036">
+            <state line="8" column="0" selection-start="88" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
               <folding>
                 <element signature="e#6#86#0" expanded="true" />
               </folding>
@@ -50,7 +69,7 @@
       <file leaf-file-name="responsive.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/responsive.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="76" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
+            <state line="19" column="45" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
@@ -104,7 +123,6 @@
         <option value="$PROJECT_DIR$/pages/css/visualpage.less" />
         <option value="$PROJECT_DIR$/pages/css/styles.less" />
         <option value="$PROJECT_DIR$/pages/ajaxphptest.html" />
-        <option value="$PROJECT_DIR$/javascript/functions.js" />
         <option value="$PROJECT_DIR$/pages/asia.html" />
         <option value="$PROJECT_DIR$/css/visual-page.css" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -112,6 +130,9 @@
         <option value="$PROJECT_DIR$/javascript/responsive.js" />
         <option value="$PROJECT_DIR$/pages/responsive.html" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/pages/responsive.php" />
+        <option value="$PROJECT_DIR$/main-page.html" />
+        <option value="$PROJECT_DIR$/javascript/functions.js" />
       </list>
     </option>
   </component>
@@ -323,11 +344,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javascript/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="48" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="495" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="17" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0" vertical-offset="454" max-vertical-offset="1050" />
@@ -581,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="373" selection-end="373" vertical-scroll-proportion="0.15926641" vertical-offset="0" max-vertical-offset="1036">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/responsive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
@@ -599,24 +608,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/responsive.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="76" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
+        <state line="19" column="45" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="111" selection-end="111" vertical-scroll-proportion="0.115830116" vertical-offset="0" max-vertical-offset="1036">
+        <state line="8" column="0" selection-start="88" selection-end="122" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <folding>
             <element signature="e#6#86#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/responsive.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="24" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="19" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="522" selection-end="522" vertical-scroll-proportion="0.23166023" vertical-offset="0" max-vertical-offset="1036">
+          <folding />
         </state>
       </provider>
     </entry>
