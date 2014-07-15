@@ -1,0 +1,43 @@
+header {
+    width:80%;
+    background-color:black;
+    color:white;
+    margin-right:auto;
+    margin-left:auto;
+    padding:10px;
+    overflow:hidden;
+}
+body {
+    font-family:Arial,Helvettica,sans-serif;
+    background-color:slategray;
+    width: 80%;
+    color:#f5f5f5;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#vacations-wrapper {
+    width: 400px;
+    height: 500px;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+    background-color: #eeeeee;
+}
+
+#top-div {
+    background-color: #ffff00;
+}
+
+h1 {
+    color: green;
+}
+
+p {
+    color: cadetblue;
+    margin: 5px;
+    cursor: pointer;
+}
+p:hover {
+    background: yellow;
+}

@@ -6,21 +6,26 @@
     <link rel="stylesheet" type="text/css" href="css/test.css" media="screen">
     <script src="javascript/jquery-1.11.1.js" ></script>
     <script src="javascript/functions.js" ></script>
-    <script src="bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
 
 </head>
 <body>
 <div id="homepage-wrapper">
     <div class="jumbotron">
-        <h1>Hi using bootstrap!</h1>
-        <p>initial page</p>
+        <h1>H1 with bootstrap!</h1>
+        <h2>H2 with bootstrap</h2>
+        <h3>h3 with bootstrap</h3>
+        <p>Paragraph</p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
     </div>
-    <p id="PHP is Down">PHP is down</p>
-    <p>Testing</p>
-    <?php
+    <div class="hovers">
+        <p>PHP is up</p>
+        <p>Testing</p>
+        <?php
         echo "<p>Hello from PHP</p>";
-    ?>
+        ?>
+    </div>
+
 </div>
 
 <div  class="visual-div" id="vacations-wrapper">
@@ -46,9 +51,18 @@
 <div class="visual-div" id="middle-div">
     <h1>Bellow another list</h1>
     <h2>More over</h2>
-    <div class="squares" style="background-color:red"> RED</div>
+    <div class="squares"style="background-color:red"> RED</div>
     <div class="squares" style="background-color:blue"> BLUE</div>
     <div class="squares" style="background-color:green"> GREEN</div>
+    <br><br>
+    <div class= "buttons">
+        <button class="continue">Continue</button>
+        <button class="pause">Pause</button>
+    </div>
+    <div>
+        <p>Weather bellow:</p>
+    </div>
+    <div id="weather-temp"></div>
 </div>
 
 <div class="visual-div">
