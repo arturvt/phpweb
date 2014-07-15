@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89800e9d-0305-404c-bcf3-dac101be5698" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/responsive.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/javascript/responsive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/styles.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/css/styles.less" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/css/bootstrap-theme.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/css/bootstrap.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/javascript/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/bootstrap-3.1.1-dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/javascript/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/visual-page.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/css/coin.css" afterPath="$PROJECT_DIR$/css/coin.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/css/coin.less" afterPath="$PROJECT_DIR$/css/coin.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/css/visualpage.css" afterPath="$PROJECT_DIR$/css/visualpage.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/css/visualpage.less" afterPath="$PROJECT_DIR$/css/visualpage.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/js/less-1.7.0.js" afterPath="$PROJECT_DIR$/javascript/less-1.7.0.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/pages/js/scripts.js" afterPath="$PROJECT_DIR$/javascript/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/ajaxphptest.html" afterPath="$PROJECT_DIR$/pages/ajaxphptest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/asia.html" afterPath="$PROJECT_DIR$/pages/asia.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/bootstrappage.html" afterPath="$PROJECT_DIR$/pages/bootstrappage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/europe.html" afterPath="$PROJECT_DIR$/pages/europe.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/javascript/functions.js" afterPath="$PROJECT_DIR$/javascript/functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/test.css" afterPath="$PROJECT_DIR$/css/test.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/test.less" afterPath="$PROJECT_DIR$/css/test.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/main-page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phpweb.iws" />
@@ -58,8 +27,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="main-page.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main-page.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="27" column="0" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
               <folding />
@@ -67,10 +36,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsive.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="23" selection-start="111" selection-end="111" vertical-scroll-proportion="0.115830116" vertical-offset="0" max-vertical-offset="1036">
+              <folding>
+                <element signature="e#6#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsive.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/responsive.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="76" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.68050194" vertical-offset="0" max-vertical-offset="1500">
+            <state line="47" column="76" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
@@ -131,6 +111,7 @@
         <option value="$PROJECT_DIR$/css/test.less" />
         <option value="$PROJECT_DIR$/javascript/responsive.js" />
         <option value="$PROJECT_DIR$/pages/responsive.html" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -289,7 +270,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3186356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3186356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32894737" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -342,11 +323,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/javascript/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="164" selection-end="164" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="270" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="48" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="495" />
@@ -362,7 +338,7 @@
         <state line="16" column="69" selection-start="558" selection-end="558" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="870" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/main-page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705" />
       </provider>
@@ -392,7 +368,7 @@
         <state line="19" column="0" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="870" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/main-page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="45" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="675" />
       </provider>
@@ -612,13 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/responsive.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="0" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
@@ -630,8 +599,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/responsive.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="76" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.68050194" vertical-offset="0" max-vertical-offset="1500">
+        <state line="47" column="76" selection-start="1971" selection-end="1971" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="23" selection-start="111" selection-end="111" vertical-scroll-proportion="0.115830116" vertical-offset="0" max-vertical-offset="1036">
+          <folding>
+            <element signature="e#6#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
