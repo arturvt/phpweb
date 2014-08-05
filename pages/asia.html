@@ -28,14 +28,18 @@
         </div>
         <br>
         <br>
-        <div id="ajax">
+        <div class="div01" id="ajax">
             <h2>Ajax Area</h2>
             <button type="button" onclick='myFunction()' >Change Content (TXT File)</button>
             <br>
             <button type="button" onclick='myFunction("cd_catalog.xml")' >Change Content (XML File)</button>
         </div>
-        <h2>My CD Collection:</h2>
-        <div id="toChange"></div>
+        <div class="div02">
+          <h1>Something here...</h1>
+          <a href="foo">Link</a>
+          <h2>My CD Collection:</h2>
+        </div>
+        <div class="div02" id="toChange"></div>
         <div id="testarea">
           <p id="fp">First paragraph</p>
           <p>Second paragraph</p>
@@ -83,8 +87,8 @@
             document.getElementById("toChange").innerHTML=xmlhttp.responseText;
             }
           });
-        }          
-        
+        } 
+
         
     </script>
 

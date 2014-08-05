@@ -24,6 +24,27 @@ $(document).ready(function() {
     $("#button-back").click(function() {
        window.history.go(-1);
     });
+
+      navigator.getUserMedia({
+        video:true
+      }, onSuccess, onFail);
+
+        function onSuccess(stream) {
+          var video = document.querySelector('video');
+          video.src = window.URL.createObjectURL(stream);
+          video.onloadedmetadata = function(e) {
+            
+          }
+          alert('HEEY');
+        };
+
+        function onFail() {
+          alert('Fail');
+        };
+
+        
+
+
 });
 
 
