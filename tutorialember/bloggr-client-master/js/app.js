@@ -31,6 +31,7 @@ App = Ember.Application.create({});
 
 App.Router.map(function() {
   this.resource('about');
+  this.resounce('offline-posts');
   this.resource('posts', function() {
     this.resource('post', { path: ':post_id' });
   });
