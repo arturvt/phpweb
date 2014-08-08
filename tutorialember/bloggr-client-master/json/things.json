@@ -1,0 +1,1272 @@
+{"status": "ok", "count": 10, "count_total": 15, "pages": 2, "posts": [
+    {
+        "id": 875,
+        "type": "post",
+        "slug": "maybe-progressive-enhancement-is-the-wrong-term",
+        "url": "http:\/\/tomdale.net\/2013\/09\/maybe-progressive-enhancement-is-the-wrong-term\/",
+        "status": "publish",
+        "title": "Maybe Progressive Enhancement is the Wrong Term",
+        "title_plain": "Maybe Progressive Enhancement is the Wrong Term",
+        "content": "<p>Many of the responses to my last article, <a href=\"http:\/\/tomdale.net\/2013\/09\/progressive-enhancement-is-dead\/\">Progressive Enhancement: Zed&#8217;s Dead, Baby<\/a>,\nwere that I &#8220;didn&#8217;t get&#8221; progressive enhancement.<\/p>\n\n<p>&#8220;&#8216;Progressive enhancement&#8217; isn&#8217;t &#8216;working with JavaScript disabled,&#8217;&#8221; proponents argued.<\/p>\n\n<p>First, many, many people conflate the two. <a href=\"http:\/\/sighjavascript.tumblr.com\">Sigh JavaScript<\/a>\nis an exercise in lobotomizing browsers and then expecting websites to still work with them. This is a little bit\nlike arguing that we should still be laying out our websites using tables and inline styles in case users disable\nCSS. No. JavaScript is part of the web platform; you don&#8217;t get to take it away and expect the web to work.<\/p>\n\n<p>So, maybe it is time to choose a new term that doesn&#8217;t carry with it the baggage of the past.<\/p>\n\n<p>Second, many people argued that web applications should always be initially\nrendered on the server. Only once the browser has finished rendering that initial\nHTML payload should JavaScript then take over.<\/p>\n\n<p>These folks agree that 100% JavaScript-driven apps (like <a href=\"http:\/\/bustle.com\">Bustle<\/a>) are faster than\ntraditional, server-rendered apps after the initial load, but argue that any increase in time-to-initial-content\nis an unacceptable tradeoff.<\/p>\n\n<p>While I think that for many apps, it <em>is<\/em> an acceptable tradeoff, it clearly isn&#8217;t for many others, like\nTwitter.<\/p>\n\n<p>Unfortunately, telling people to &#8220;just render the initial HTML on the server&#8221; is a bit like saying &#8220;it&#8217;s easy to\nend world hunger; just give everyone some food.&#8221; You&#8217;ve described the solution while leaving out many of the important\ndetails in the middle. Doing this in a sane way that scales up to a large application requires architecting your\napp in such a way that you can separate out certain parts, like data fetching and HTML rendering, and do those just\non the server.<\/p>\n\n<p>Once you&#8217;ve done that, you need to somehow transfer the state that the server used to do its initial render over to\nthe client, so it can pick up where the server left off.<\/p>\n\n<p>You can do this by hand (see Airbnb&#8217;s <a href=\"https:\/\/github.com\/airbnb\/rendr\">Rendr<\/a>) but it requires so much manual labor that any application of complexity would quickly fall apart.<\/p>\n\n<p>That being said, I agree that this is where JavaScript applications are heading, and I think Ember is strongly positioned\nto be one of the first to deliver a comprehensive solution to both web spidering and initial server renders that improve\nthe &#8220;time to first content.&#8221; We&#8217;ve been thinking about this for a long time and have designed Ember&#8217;s architecture around it.\nI laid out our plan last June in an interview on the <a href=\"http:\/\/herdingcode.com\/herding-code-169-tom-dale-and-rob-conery-on-the-emberjs-angularjs-cage-match-at-ndc\/\">Herding Code podcast<\/a>. (I start talking about this around the 19:30 mark.)<\/p>\n\n<p>I think that once we deliver server-side renders that can hand off seamlessly to JavaScript on the client, we will be able to combine the speed of initial load times of traditional web applications with the snappy performance and superior maintainability of 100% JavaScript apps like Bustle and its peers.<\/p>\n\n<p>Of course, there are many UI issues that we still need to figure out as a community. For one thing, server-rendered apps can leave you with a non-functional Potemkin village of UI elements until the JavaScript finishes loading, leading to frustrating phantom clicks that go nowhere.<\/p>\n\n<p>Just don&#8217;t dismiss 100% JavaScript apps because of where they are today. The future is coming fast.<\/p>\n",
+        "excerpt": "<p>Many of the responses to my last article, Progressive Enhancement: Zed&#8217;s Dead, Baby, were that I &#8220;didn&#8217;t get&#8221; progressive enhancement. &#8220;&#8216;Progressive enhancement&#8217; isn&#8217;t &#8216;working with JavaScript disabled,&#8217;&#8221; proponents argued. First, many, many people conflate the two. Sigh JavaScript is an exercise in lobotomizing browsers and then expecting websites to still work with them. This is [&hellip;]<\/p>",
+        "date": "2013-09-04 16:20:29",
+        "modified": "2013-09-04 16:25:04",
+        "categories": [
+            {
+                "id": 1,
+                "slug": "general",
+                "title": "General",
+                "description": "",
+                "parent": 0,
+                "post_count": 14
+            }
+        ],
+        "tags": [],
+        "author": {
+            "id": 2,
+            "slug": "tomdale",
+            "name": "Tom Dale",
+            "first_name": "Tom",
+            "last_name": "Dale",
+            "nickname": "tomdale",
+            "url": "",
+            "description": ""
+        },
+        "comments": [],
+        "attachments": [],
+        "comment_count": 0,
+        "comment_status": "closed",
+        "custom_fields": {}
+    },
+    {
+        "id": 836,
+        "type": "post",
+        "slug": "progressive-enhancement-is-dead",
+        "url": "http:\/\/tomdale.net\/2013\/09\/progressive-enhancement-is-dead\/",
+        "status": "publish",
+        "title": "Progressive Enhancement: Zed&#8217;s Dead, Baby",
+        "title_plain": "Progressive Enhancement: Zed&#8217;s Dead, Baby",
+        "content": "<p><img src=\"http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/zeds-dead-baby.jpg\" alt=\"zeds-dead-baby\" width=\"500\" class=\"aligncenter wp-image-864\" \/><\/p>\n\n<p>A few days ago, Daniel Mall launched a snarky tumblr called <a href=\"http:\/\/sighjavascript.tumblr.com\/\">Sigh, JavaScript<\/a>. I was reminded of <a href=\"http:\/\/www.telegraph.co.uk\/news\/worldnews\/northamerica\/usa\/10099235\/Long-Island-lawyers-surgeons-and-socialites-on-prostitution-wall-of-shame.html\">law enforcement agencies that release a &#8220;wall of shame&#8221; of men who solicit prostitutes<\/a>.<sup><a href=\"#footnote_0_836\" id=\"identifier_0_836\" class=\"footnote-link footnote-identifier-link\" title=\"It is coincidence that the police commissioner is also named Thomas Dale\">1<\/a><\/sup> The goal here is to publicly embarrass those who fall outside your social norms; in this case, it&#8217;s websites that don&#8217;t work with JavaScript disabled.<\/p>\n\n<p>I&#8217;ve got bad news, though: Progressive enhancement is dead, baby. It&#8217;s dead. At least for the majority of web developers.<\/p>\n\n<p>The religious devotion to it was useful in a time when web development was new and browsers were still more like bumbling toddlers than the confident, lively young adults they&#8217;ve grown to become.<\/p>\n\n<p>Something happened a few years ago in web browser land. Did you notice it? I didn&#8217;t. At least not right away.<\/p>\n\n<p>At some point recently, <strong>the browser transformed from being an awesome interactive document viewer into being the world&#8217;s most advanced, widely-distributed application runtime.<\/strong><\/p>\n\n<p>Developer communities have a habit of crafting mantras that they can repeat over and over again. These distill down the many nuances of decision-making into a single rule, repeated over and over again, that the majority of people can follow and do approximately the right thing. This is good.<\/p>\n\n<p>However, the downside of a mantra is that the original context around why it was created gets lost. They tend to take on a sort of religious feel. I&#8217;ve seen in-depth technical discussions get derailed because people would invoke the mantra as an axiom rather than as having being derived from first principles. (<a href=\"http:\/\/www.unlimitednovelty.com\/2012\/03\/dont-use-bcrypt.html\">&#8220;Just use bcrypt&#8221; is another one.<\/a>)<\/p>\n\n<p>Mantras are useful for aligning a developer community around a set of norms, but they don&#8217;t take into account that the underlying assumptions behind them change. They tend to live on a little bit beyond their welcome.<\/p>\n\n<p><blockquote class=\"twitter-tweet\" width=\"500\"><p>I remember when CSS was getting big but not yet widely available, the clamor was for not using it since it &quot;broke&quot; the web. Now, javascript.<\/p>&mdash; Trek Glowacki (@trek) <a href=\"https:\/\/twitter.com\/trek\/statuses\/372703510262853633\">August 28, 2013<\/a><\/blockquote><script async src=\"\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"><\/script><\/p>\n\n<p>Many proponents of progressive enhancement like to frame the issue in a way that feels, to me, a little condescending. Here&#8217;s Daniel Mall again in <a href=\"http:\/\/danielmall.com\/articles\/progressive-enhancement\/\">his follow-up post<\/a>:<\/p>\n\n<blockquote>Lots of people don\u2019t know how to build sites that work for as many people as possible. That\u2019s more than ok, but don\u2019t pretend that it was your plan all along.<\/blockquote>\n\n<p>Actually, Daniel, I do know how to build sites that work for as many people as possible. However, I&#8217;m betting my business on the fact that, by building JavaScript apps from the ground up, I can build a better product than my competitors who chain themselves to progressive enhancement.<\/p>\n\n<p>Take <a href=\"http:\/\/skylight.io\">Skylight<\/a>, the Rails performance monitoring tool I build as my day job. From the beginning, we architected it as though we were building a native desktop application that just <em>happens<\/em> to run in the web browser. (The one difference is that JavaScript web apps need to have good URLs to not feel broken, which is why we used <a href=\"http:\/\/emberjs.com\">Ember.js<\/a>.)<\/p>\n\n<p>To fetch data, it opens a socket to a Java backend that streams in data transmitted as <a href=\"https:\/\/code.google.com\/p\/protobuf\/\">protobufs<\/a>. It then analyzes and recombines that data in response to the user interacting with the UI, which is powered by <a href=\"http:\/\/emberjs.com\">Ember.js<\/a> and <a href=\"d3js.org\">D3<\/a>.<\/p>\n\n<p>Probably a short movie illustrates what I&#8217;m talking about:<\/p>\n\n<p><iframe width=\"500\" height=\"375\" src=\"http:\/\/www.youtube.com\/embed\/yE7rJUIcKVU?feature=oembed\" frameborder=\"0\" allowfullscreen><\/iframe><\/p>\n\n<p>What we&#8217;re doing wasn&#8217;t even possible in the browser a few years ago. It&#8217;s time to revisit our received wisdom.<\/p>\n\n<p>We live in a time where you can assume JavaScript is part of the web platform. Worrying about browsers without JavaScript is like worrying about whether you&#8217;re backwards compatible with HTML 3.2 or CSS2. At some point, you have to accept that some things are just part of the platform. Drawing the line at JavaScript is an arbitrary delineation that doesn&#8217;t match the state of browsers in 2013.<\/p>\n\n<p>In fact, <a href=\"http:\/\/www.extremetech.com\/computing\/163291-firefox-23-finally-kills-the-blink-tag-removes-ability-to-turn-off-javascript-introduces-new-logo\">Firefox recently entirely removed the ability to disable JavaScript<\/a>, a move I applaud them for. (They also removed the <code>&lt;blink&gt;<\/code> tag at the same time\u2014talk about joining the future.)<\/p>\n\n<p>Embracing JavaScript from the beginning will let you build faster apps that provide UIs that just weren&#8217;t possible before. For example, think back to the first time you used Google Maps after assuming MapQuest was the best we could do. Remember that feeling of, &#8220;Holy crap, I didn&#8217;t know this was possible in the browser&#8221;? That&#8217;s what you should be aiming for.<\/p>\n\n<p>Of course, there will always be cases where server-rendered HTML will be more appropriate. But that&#8217;s for you to decide by analyzing what percentage of your users have JavaScript disabled and what kind of user experience you want to deliver.<\/p>\n\n<p>Don&#8217;t limit your UI by shackling yourself to outmoded mantras, because your competitors aren&#8217;t.<\/p>\n\n<p>From Daniel&#8217;s post:<\/p>\n\n<blockquote>And sometimes, we don\u2019t realize that \u201conly for people who have JavaScript enabled\u201d also means \u201cnot for anyone with a Blackberry\u201d or \u201cnot for anyone who works at [old-school organization]\u201d or \u201cnot for people in a developing country\u201d or \u201cnot for people on the Edge network.\u201d<\/blockquote>\n\n<p>If those are important parts of your demographic, fine. Run the numbers. But I do take issue with Daniel&#8217;s last claim here, about Edge networks.<\/p>\n\n<p>What I&#8217;ve found, counter-intuitively, is that apps that <em>embrace<\/em> JavaScript actually end up having <em>less<\/em> JavaScript. Yeah, I know, it&#8217;s some Zen koan shit. But the numbers speak for themselves.<\/p>\n\n<p>For example, here&#8217;s <a href=\"http:\/\/bostonglobe.com\">the Boston Globe&#8217;s home page<\/a>, with 563kb of JavaScript:<\/p>\n\n<p><img src=\"http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/boston-globe.png\" alt=\"Screenshot of the Boston Globe website\" width=\"681\" height=\"1189\" class=\"aligncenter size-full wp-image-846\" \/><\/p>\n\n<p>And here&#8217;s <a href=\"http:\/\/bustle.com\">Bustle<\/a>, a recently-launched Ember.js app. Surprisingly, this 100% JavaScript rendered app clocks in at a relatively petite 141kb of JavaScript.<\/p>\n\n<p><img src=\"http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/bustle.png\" alt=\"Screenshot of bustle.com\" width=\"681\" height=\"1189\" class=\"aligncenter size-full wp-image-857\" \/><\/p>\n\n<p>If you&#8217;re a proponent of progressive enhancement, I encourage you to really think about how much the browser environment has changed since the notion of progressive enhancement was created. If we had then what we have now, would we still have made the same choice? I doubt it.<\/p>\n\n<p>And most importantly: <strong>Don&#8217;t be ashamed to build 100% JavaScript applications.<\/strong> You may get some incensed priests vituperating you in their blogs. But there will be an army of users (like me) who will fall in love with using your app.<\/p>\n\n<p><i>Thanks to Yehuda Katz for reviewing this draft. Tell me how mad I just made you: <a href=\"https:\/\/twitter.com\/tomdale\">@tomdale<\/a><\/i><\/p>\n<ol class=\"footnotes\"><li id=\"footnote_0_836\" class=\"footnote\">It is coincidence that the police commissioner is also named Thomas Dale [<a href=\"#identifier_0_836\" class=\"footnote-link footnote-back-link\">&#8617;<\/a>]<\/li><\/ol>",
+        "excerpt": "<p>A few days ago, Daniel Mall launched a snarky tumblr called Sigh, JavaScript. I was reminded of law enforcement agencies that release a &#8220;wall of shame&#8221; of men who solicit prostitutes.1 The goal here is to publicly embarrass those who fall outside your social norms; in this case, it&#8217;s websites that don&#8217;t work with JavaScript [&hellip;]<\/p>",
+        "date": "2013-09-02 11:45:46",
+        "modified": "2013-09-02 11:45:46",
+        "categories": [
+            {
+                "id": 1,
+                "slug": "general",
+                "title": "General",
+                "description": "",
+                "parent": 0,
+                "post_count": 14
+            }
+        ],
+        "tags": [],
+        "author": {
+            "id": 2,
+            "slug": "tomdale",
+            "name": "Tom Dale",
+            "first_name": "Tom",
+            "last_name": "Dale",
+            "nickname": "tomdale",
+            "url": "",
+            "description": ""
+        },
+        "comments": [],
+        "attachments": [
+            {
+                "id": 846,
+                "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/boston-globe.png",
+                "slug": "boston-globe",
+                "title": "Screenshot of the Boston Globe website",
+                "description": "",
+                "caption": "",
+                "parent": 836,
+                "mime_type": "image\/png",
+                "images": {
+                    "full": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/boston-globe.png",
+                        "width": 681,
+                        "height": 1189
+                    },
+                    "thumbnail": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/boston-globe-150x150.png",
+                        "width": 150,
+                        "height": 150
+                    },
+                    "medium": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/boston-globe-171x300.png",
+                        "width": 171,
+                        "height": 300
+                    },
+                    "large": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/boston-globe-586x1024.png",
+                        "width": 586,
+                        "height": 1024
+                    }
+                }
+            },
+            {
+                "id": 857,
+                "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/bustle.png",
+                "slug": "bustle",
+                "title": "Screenshot of bustle.com",
+                "description": "",
+                "caption": "",
+                "parent": 836,
+                "mime_type": "image\/png",
+                "images": {
+                    "full": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/bustle.png",
+                        "width": 681,
+                        "height": 1189
+                    },
+                    "thumbnail": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/bustle-150x150.png",
+                        "width": 150,
+                        "height": 150
+                    },
+                    "medium": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/bustle-171x300.png",
+                        "width": 171,
+                        "height": 300
+                    },
+                    "large": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/bustle-586x1024.png",
+                        "width": 586,
+                        "height": 1024
+                    }
+                }
+            },
+            {
+                "id": 864,
+                "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/zeds-dead-baby.jpg",
+                "slug": "zeds-dead-baby",
+                "title": "zeds-dead-baby",
+                "description": "",
+                "caption": "",
+                "parent": 836,
+                "mime_type": "image\/jpeg",
+                "images": {
+                    "full": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/zeds-dead-baby.jpg",
+                        "width": 640,
+                        "height": 463
+                    },
+                    "thumbnail": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/zeds-dead-baby-150x150.jpg",
+                        "width": 150,
+                        "height": 150
+                    },
+                    "medium": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/zeds-dead-baby-300x217.jpg",
+                        "width": 300,
+                        "height": 217
+                    },
+                    "large": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/09\/zeds-dead-baby.jpg",
+                        "width": 640,
+                        "height": 463
+                    }
+                }
+            }
+        ],
+        "comment_count": 0,
+        "comment_status": "closed",
+        "custom_fields": {}
+    },
+    {
+        "id": 814,
+        "type": "post",
+        "slug": "san-francisco-i-love-you-but-youre-bringing-me-down",
+        "url": "http:\/\/tomdale.net\/2013\/07\/san-francisco-i-love-you-but-youre-bringing-me-down\/",
+        "status": "publish",
+        "title": "San Francisco, I Love You But You&#8217;re Bringing Me Down",
+        "title_plain": "San Francisco, I Love You But You&#8217;re Bringing Me Down",
+        "content": "<p>It&#8217;s impossible to argue that San Francisco hasn&#8217;t changed my life dramatically. When I moved to the Bay Area four years ago, I was an inexperienced kid who was working at a Genius Bar in an Apple Store. I didn&#8217;t know JavaScript at all\u2014hell, I could barely program and my useless liberal arts degree was doing nothing for me.<\/p>\n\n<p>Since then, I&#8217;ve helped found a company that, I&#8217;m proud to say, is both profitable and invests serious capital back into open source software. On the way to get coffee, I regularly bump into people that are changing the way I think about technology. I&#8217;ve had the opportunity to travel the world and share my half-baked ideas with other developers. The sense of excitement in the air is palpable\u2014the sense that we&#8217;re always on the cusp of something big.<\/p>\n\n<p>That excitement has attracted plenty of investment dollars, and it has a dark side. Enough ink has been spilled whining about how wealthy tech people are ruining the city. It&#8217;s bothered me, too; not because I think there is anything wrong with wealthy tech people,  per se, but because it&#8217;s become like the classic <i>Star Trek<\/i> episode, <i>The Trouble with Tribbles<\/i>.<\/p>\n\n<p>The brobdingnagian salaries we&#8217;re getting paid haven&#8217;t just skewed the market; they&#8217;ve taken it in two hands, turned it upside down, and shaken it like a British nanny. My friends who are not in technology keep getting pushed further and further away, or into smaller, dingier accommodations.<\/p>\n\n<p>The recent BART strikes are just a single data point in a larger trend: we&#8217;re alienating everyone who isn&#8217;t in technology. It&#8217;s not sustainable. The <a href=\"http:\/\/www.marketplace.org\/topics\/tech\/bart-strike-reveals-tech-transit-worker-divide\">stomach-turning coverage<\/a> of the BART strikes should throw into stark contrast just how bad things have gotten. Even I, who makes a decent salary, have seen the great American dream of home ownership recede into the distance.<\/p>\n\n<p>It took a long time for me to realize I was part of the problem. <i>Yeah, I might be in tech, but I&#8217;m not one of these social media douchebags<\/i>, I thought. Doesn&#8217;t matter. The fact that I get embarrassed when a girl at a bar asks me what I do should have been my first clue.<\/p>\n\n<p>But as I said, there has been enough hand-wringing and navel-gazing. Whiny blog posts do nothing. What can I do?<\/p>\n\n<p>Exactly what Adam Smith would want: I&#8217;m moving to Portland.<\/p>\n\n<p>In Portland, my mortgage payment will be the same price as the rent I pay in San Francisco. The only difference is that, instead of sharing a small house with two other dudes, I can have a larger house to myself. Portland offers all of the great restaurants, coffee shops and bars that I love about SF, without having to overhear conversations about Series A rounds or monetization strategies.<\/p>\n\n<p>And I&#8217;m looking forward to whatever small part I can play in helping Portland&#8217;s burgeoning tech scene. I&#8217;m excited to be neighbors with the likes of Panic, Sprint.ly and Simple.<\/p>\n\n<p>But.<\/p>\n\n<p>I am going to miss the hell out of San Francisco. I grew up in a small town, and went to school in Orange County. Both were heavily conservative and well-to-do. The tolerance of San Francisco has been eye opening.<\/p>\n\n<p>I remember the October I moved into my place in Noe Valley. It was Halloween, and I was driving back from the Marina. I didn&#8217;t yet know enough to avoid the Castro on days the city dresses up in costume.<\/p>\n\n<p>I was stopped at the light at 18th and Castro when a man strode in front of me, wearing nothing but a glow ring around his\u2026 undercarriage. I was flabbergasted. Where I came from, you would have been arrested immediately. Here, no one cared, as long as you weren&#8217;t harming anyone else.<\/p>\n\n<p>San Francisco is where I learned not just to be a programmer, but to be an engineer. It&#8217;s where I learned about design, and tolerance, and business, and how to let your hair down.<\/p>\n\n<p>Last night I was flipping through 7&#215;7 magazine and started reading Robin Rinaldi&#8217;s <a href=\"http:\/\/www.7x7.com\/arts-culture\/what-its-leave-city-your-dreams\"><i>What It&#8217;s Like to Leave the City of Your Dreams<\/i><\/a>. I came close to having a full-blown anxiety attack, thinking about leaving the city that has shaped me and delivered me from the life-long depression that I thought was just intrinsic.<\/p>\n\n<p>After I calmed down, I realized that it was just like when my last serious girlfriend and I broke up. We had been fighting all day, and at some point I turned to her and said, <i>Do you still want to do this?<\/i> She said no. I think we were both relieved.<\/p>\n\n<p>But then, as I drove her home, we started reminiscing about all of the personal struggles we had helped each other through. We had both been new to the city when we met, and both had plenty of personal issues to work through. It was a tearful affair as we finally parted ways. It was hard to come to grips with the fact that even though we had been <i>good<\/i> for each other, we weren&#8217;t <i>right<\/i> for each other.<\/p>\n\n<p>And that&#8217;s how I feel about living here now. I owe an inordinate debt to San Francisco and its people. But I think, now, the relationship is doing more harm than good.<\/p>\n\n<p>But, I can&#8217;t help but think: maybe, someday, when we&#8217;ve both changed, we can try to make things work again. I&#8217;ll miss you. And I&#8217;m sure I&#8217;ll still see you around.<\/p>\n\n<p><i>If you want to follow along with my move, I&#8217;ll be tweeting about it from <a href=\"https:\/\/twitter.com\/tomdale\">@tomdale<\/a>.<\/i><\/p>\n",
+        "excerpt": "<p>It&#8217;s impossible to argue that San Francisco hasn&#8217;t changed my life dramatically. When I moved to the Bay Area four years ago, I was an inexperienced kid who was working at a Genius Bar in an Apple Store. I didn&#8217;t know JavaScript at all\u2014hell, I could barely program and my useless liberal arts degree was [&hellip;]<\/p>",
+        "date": "2013-07-08 11:11:19",
+        "modified": "2013-07-08 11:37:34",
+        "categories": [
+            {
+                "id": 5,
+                "slug": "life",
+                "title": "Life",
+                "description": "",
+                "parent": 0,
+                "post_count": 1
+            }
+        ],
+        "tags": [],
+        "author": {
+            "id": 2,
+            "slug": "tomdale",
+            "name": "Tom Dale",
+            "first_name": "Tom",
+            "last_name": "Dale",
+            "nickname": "tomdale",
+            "url": "",
+            "description": ""
+        },
+        "comments": [],
+        "attachments": [],
+        "comment_count": 0,
+        "comment_status": "closed",
+        "custom_fields": {}
+    },
+    {
+        "id": 797,
+        "type": "post",
+        "slug": "evergreen-browsers",
+        "url": "http:\/\/tomdale.net\/2013\/05\/evergreen-browsers\/",
+        "status": "publish",
+        "title": "Evergreen Browsers",
+        "title_plain": "Evergreen Browsers",
+        "content": "<blockquote>\n<p>\u2026Exponential growth is seductive, starting out slowly and virtually unnoticeably, but beyond the knee of the curve it turns explosive and profoundly transformative. The future is widely misunderstood\u2026<\/p>\n\n<p>Today, we anticipate continuous technological progress and the social repercussions that follow. But the future will be far more surprising than most people realize, because few observers have truly internalized the implications of the fact that the rate of change itself is accelerating.<\/p>\n\n\u2014Ray Kurzweil,\u00a0<a href=\"http:\/\/www.amazon.com\/gp\/product\/0143037889\/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0143037889&amp;linkCode=as2&amp;tag=hdibmm-20\">The Singularity Is Near: When Humans Transcend Biology<\/a><img style=\"border: none !important; margin: 0px !important;\" alt=\"\" src=\"http:\/\/www.assoc-amazon.com\/e\/ir?t=hdibmm-20&amp;l=as2&amp;o=1&amp;a=0143037889\" width=\"1\" height=\"1\" border=\"0\" \/>\n<\/blockquote>\n\n<p>I am privileged in two ways that are very rewarding for me:<\/p>\n\n<ul>\n    <li>I have some insight into the web standards process, due to my friendship with people driving it, and have a notion of the exciting features that are soon to come.<\/li>\n    <li>I get to travel around the world and talk to boots-on-the-ground developers who are building amazing stuff on the web platform, today.<\/li>\n<\/ul>\n\n<p>Often, I&#8217;ll express excitement about some new feature coming to the web platform\u2014whether it&#8217;s ES6 features like <a href=\"http:\/\/wiki.ecmascript.org\/doku.php?id=harmony:proxies\">object proxies<\/a> or <a href=\"http:\/\/wiki.ecmascript.org\/doku.php?id=harmony:modules\">modules<\/a>, or W3C-specified features like <a href=\"http:\/\/www.w3.org\/TR\/2012\/WD-components-intro-20120522\/\">Web Components<\/a>. But, it&#8217;s easy for in-the-trenches developers to dismiss these features as cool but far-off; unhelpful in their current plight; and worse, they are shell-shocked: they have lived through the dark times of Internet Explorer 6, and an out-of-touch W3C. That pain is marked indelibly on their soul.<\/p>\n\n<blockquote>\n<p>Eso es todo. A lo lejos alguien canta. A lo lejos.<br \/>Mi alma no se contenta con haberla perdido.<\/p>\n\n<p>That&#8217;s all. In the distance, someone sings. In the distance.<br \/>\nMy soul is not at peace with having lost her.<\/p>\n\n\u2014Pablo Neruda, <em>Veinte poemas de amor: 20<\/em>, <a href=\"http:\/\/www.amazon.com\/gp\/product\/0872864286\/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0872864286&amp;linkCode=as2&amp;tag=hdibmm-20\">The Essential Neruda: Selected Poems<\/a><img style=\"border: none !important; margin: 0px !important;\" alt=\"\" src=\"http:\/\/www.assoc-amazon.com\/e\/ir?t=hdibmm-20&amp;l=as2&amp;o=1&amp;a=0872864286\" width=\"1\" height=\"1\" border=\"0\" \/><\/blockquote>\n\n<p>I&#8217;m here with a message of hope. I don&#8217;t know who coined the term, but I heard it first from <a href=\"https:\/\/twitter.com\/paul_irish\">Paul Irish<\/a>: evergreen browsers. What&#8217;s an evergreen browser? One that updates itself without prompting the user.<\/p>\n\n<p>If you&#8217;re like me, when you&#8217;re developing a new web application, you put features into mental buckets. There&#8217;s the &#8220;works in IE7&#8243; bucket, the &#8220;works in IE8&#8243; bucket, &#8220;(I think) works in IE9,&#8221; and of course, &#8220;works in MobileSafari.&#8221;<\/p>\n\n<p>The one bucket I don&#8217;t have is the &#8220;works in Chrome&#8221; bucket. That&#8217;s too much mental overhead. Instead, if I want to test whether something works in Chrome, I just pop open a new <a href=\"http:\/\/jsbin.com\/\">JS Bin<\/a>\u00a0and try it out. I don&#8217;t worry about which version they&#8217;re on\u2014I assume that by the time my code makes it to production, my users will be on more-or-less the same version as me.<\/p>\n\n<p>What would the web platform look like if every browser with significant market share updated itself at the same pace\u2014and lack of\u00a0user intervention\u2014as Chrome?<\/p>\n\n<p>The good news is that both Internet Explorer and Firefox have adopted this strategy, and now we just have to wait for the last generation of non-evergreen browsers to die out. But even that is happening more rapidly than you might think.<\/p>\n\n<p>There are, of course, some sticking points. On mobile devices, old versions of Android&#8217;s pitiful browser continue to linger. But now that Chrome for Android is ascendant, this too should soon be no more than a painful memory. The only large entity still casting a shadow, from where I sit, is Apple. But given the adoption rates of new iOS versions, we&#8217;ll just have to hope that the competitive pressure from Chrome for Android will force them into once again being good citizens of the web.<\/p>\n\n<p>I am excited to be a web developer. Not only is the pace of innovation increasing, so too is the pace of delivering new features to the end user. My advice: start preparing for the future. It will be here sooner than you think.<\/p>\n",
+        "excerpt": "<p>\u2026Exponential growth is seductive, starting out slowly and virtually unnoticeably, but beyond the knee of the curve it turns explosive and profoundly transformative. The future is widely misunderstood\u2026 Today, we anticipate continuous technological progress and the social repercussions that follow. But the future will be far more surprising than most people realize, because few observers [&hellip;]<\/p>",
+        "date": "2013-05-24 12:43:14",
+        "modified": "2013-07-06 18:48:31",
+        "categories": [
+            {
+                "id": 1,
+                "slug": "general",
+                "title": "General",
+                "description": "",
+                "parent": 0,
+                "post_count": 14
+            }
+        ],
+        "tags": [],
+        "author": {
+            "id": 2,
+            "slug": "tomdale",
+            "name": "Tom Dale",
+            "first_name": "Tom",
+            "last_name": "Dale",
+            "nickname": "tomdale",
+            "url": "",
+            "description": ""
+        },
+        "comments": [
+            {
+                "id": 31911,
+                "name": "the0ther",
+                "url": "",
+                "date": "2013-05-24 17:05:29",
+                "content": "<p>i call it &#8220;the Golden Age of web development&#8221;. it really feels like that to me.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 32580,
+                "name": "Dave Mosher",
+                "url": "http:\/\/blog.davemo.com",
+                "date": "2013-06-11 08:13:15",
+                "content": "<p>It definitely feels like we are emerging from the long, dark tunnel that was the era of hacks and sniffing to target old crufty browsers.<\/p>\n\n<p>As mobile devices become more powerful and browser vendors start using auto-updating browsers as a baseline web development becomes less about normalizing across platforms and more about building great experiences <img src=\"http:\/\/tomdale.net\/wp-includes\/images\/smilies\/icon_smile.gif\" alt=\":)\" class=\"wp-smiley\" \/> <\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 32581,
+                "name": "Federico Brigante",
+                "url": "http:\/\/bfred.it",
+                "date": "2013-06-11 08:23:00",
+                "content": "<p>Come on, now. Apple is not slower than Microsoft is at updating browsers. Lest we forget that iOS and Safari update once a year while we had to wait for two years for IE10 to come out.<\/p>\n\n<p>If anything, the shadow is cast by Microsoft, as usual.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 32582,
+                "name": "Nicholas C. Zakas",
+                "url": "http:\/\/nczonline.net",
+                "date": "2013-06-11 08:38:37",
+                "content": "<p>There is but one caveat: companies who lock down browser versions internally. Some IT departments (still!) feel the need to standardize on a browser version, even for evergreen browsers and will therefore disallow automatic updating. I wish the browser vendors would spend more time educating these antiquated IT departments to help everyone move off of out-of-date browsers.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 32585,
+                "name": "Ben",
+                "url": "http:\/\/www.studiowebmedia.co.uk",
+                "date": "2013-06-11 09:25:31",
+                "content": "<p>Great post! I agree with this being the golden age of web development. I feel ecstatic to be a part of it.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 32588,
+                "name": "Ray Nicholus",
+                "url": "http:\/\/fineuploader.com",
+                "date": "2013-06-11 11:06:41",
+                "content": "<p>Thank you, Tom, for articulating these concepts so well.  It is true, the future does seem far off, especially when you are developing a cross-browser client-side library.  In that case, you are often forced to choose between alienating a group of users by  only supporting evergreen browsers, or cluttering up your code with workarounds to deal with older UAs.  While the future, as described here, still seems a bit far off (relatively speaking) it is indeed a promising one.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 32663,
+                "name": "Ken",
+                "url": "http:\/\/lightwaxx.com",
+                "date": "2013-06-13 11:46:00",
+                "content": "<p>Soon, the only thing you&#8217;ll need in your machine is a browser<\/p>\n",
+                "parent": 0
+            }
+        ],
+        "attachments": [],
+        "comment_count": 7,
+        "comment_status": "closed",
+        "custom_fields": {}
+    },
+    {
+        "id": 781,
+        "type": "post",
+        "slug": "open-source-thick-skin",
+        "url": "http:\/\/tomdale.net\/2013\/01\/open-source-thick-skin\/",
+        "status": "publish",
+        "title": "Open Source, Thick Skin",
+        "title_plain": "Open Source, Thick Skin",
+        "content": "<p>Yesterday, <a href=\"http:\/\/harthur.wordpress.com\/2013\/01\/24\/771\/\">Heather Arthur posted a well-written and sad account<\/a> of how she felt after the open ridicule of one of the projects she had made available on GitHub.<\/p>\n\n<p>This caused the battle lines to be lain between the Ruby and node.js communities. Friends of mine opened fire at one another. That made me sad.<\/p>\n\n<p>Thanks to the internet some of my closest friends are Ruby developers. Some of my closest friends are also node developers. Seeing friends get pilloried by other friends based on a lapse of judgment that doesn&#8217;t represent them, at all, made me sad.<\/p>\n\n<p>A few things.<\/p>\n\n<p>First of all, let&#8217;s be clear that the kind of thing Steve and Corey did <em>absolutely happens<\/em> in the node community. There is no room for self-righteousness here. I know because it happened to me:<\/p>\n\n<p><blockquote class=\"twitter-tweet\" width=\"500\"><p>I threw up; view-source:<a href=\"http:\/\/t.co\/5HNVmJp2\" title=\"http:\/\/emberjs.com\/examples\/simple_bindings\/\">emberjs.com\/examples\/simpl\u2026<\/a><\/p>&mdash; Paolo Fragomeni (@hij1nx) <a href=\"https:\/\/twitter.com\/hij1nx\/status\/179671483294035968\">March 13, 2012<\/a><\/blockquote><script async src=\"\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"><\/script><\/p>\n\n<p>(My reaction to this was disappointment, because I had had a great time previously hanging out with Paolo at the AustinJS party at SXSW. Thanks Joe McCann! It stings to know someone you like personally thinks your work is sufficiently bad as to induce nausea.)<\/p>\n\n<p>Sometimes I think the internet is unhealthy for us. When someone violates community norms, the reaction is vociferous and its intent seems to be to punish rather than to help. The Steve Klabnik I know is one of the most empathetic sweethearts I&#8217;ve ever met, and I can guarantee that he has already beat himself up over this; far worse than anything strangers on Twitter could do.<\/p>\n\n<p>Similarly, despite Paolo&#8217;s ridicule of my work, I don&#8217;t bear any ill will for him. I suspect he was just in a cranky mood and took it out on my work as a way to help him feel better. It&#8217;s lazy, easy, and unproductive, but it works. I know because I do it all the time (cf. any of my tweets about Turbolinks or MongoDB).<\/p>\n\n<p>So, takeaways:<\/p>\n\n<ul>\n<li>If someone pulls an asshole move, give them the benefit of the doubt. The internet lynchmob thing is so 2012. Remember that typically what you&#8217;re doing is <a href=\"http:\/\/words.steveklabnik.com\/narratives\">reinforcing your own internal narrative<\/a>.<\/li>\n<li>The Ruby and node communities are different. They value different things. One is not a threat to the other, but we sure act like it. I wrote <a href=\"https:\/\/plus.google.com\/111465598045192916635\/posts\/CkmmbjmvebM\">a post on Google+<\/a> about the responsibilities I think are associated with releasing open source software. Mikeal Rogers wrote a great reply about how <a href=\"http:\/\/www.futurealoof.com\/posts\/generation-gap.html\">those rules don&#8217;t apply in the node community<\/a>. I think these two posts explain a lot of the friction between the two communities.<\/li>\n<li>I think it is valid for people to get upset if they see someone else trying to convince someone to use code that, in their opinion, is bad. It is right to try to protect your friends from perceived danger. Perhaps this would be mitigated by having a way to differentiate between:\n\n<ul>\n<li>Here is some braindump\/learning code, I make no guarantees about the quality or fitness of this code.<\/li>\n<li>I wrote this thing; I believe it is better than alternative solutions and you should use it. I am signing up to maintain it to the best of my abilities. Criticism welcome.<\/li>\n<\/ul><\/li>\n<\/ul>\n\n<p>I think eliminating misunderstandings is the key to getting the two communities to work together. I think we need each other more than we might realize.<\/p>\n\n<p><blockquote class=\"twitter-tweet\" width=\"500\"><p>There are two ways to handle your success in open source software. Burn out on haters, or become a sociopath ignoring everyone\u2019s opinions.<\/p>&mdash; Michael Koziarski (@nzkoz) <a href=\"https:\/\/twitter.com\/nzkoz\/status\/294323277952843776\">January 24, 2013<\/a><\/blockquote><script async src=\"\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"><\/script><\/p>\n\n<p>But seriously, you node people really do want to reinvent everything. It&#8217;s exhausting trying to keep up.<\/p>\n\n<p><blockquote class=\"twitter-tweet\" width=\"500\"><p>@<a href=\"https:\/\/twitter.com\/substack\">substack<\/a> what are you talking about now dude? Why do you keep trying to reinvent programming?<\/p>&mdash; Marco Rogers (@polotek) <a href=\"https:\/\/twitter.com\/polotek\/status\/281955044495081473\">December 21, 2012<\/a><\/blockquote><script async src=\"\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"><\/script><\/p>\n\n<p>Just kidding.<\/p>\n\n<p><img src=\"http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/Bill_and_ted_be_excellent_to_each_other.gif\" alt=\"Bill_and_ted_be_excellent_to_each_other\" width=\"500\" height=\"206\" class=\"aligncenter size-full wp-image-785\" \/><\/p>\n",
+        "excerpt": "<p>Yesterday, Heather Arthur posted a well-written and sad account of how she felt after the open ridicule of one of the projects she had made available on GitHub. This caused the battle lines to be lain between the Ruby and node.js communities. Friends of mine opened fire at one another. That made me sad. Thanks [&hellip;]<\/p>",
+        "date": "2013-01-24 10:18:51",
+        "modified": "2013-01-24 10:30:56",
+        "categories": [
+            {
+                "id": 1,
+                "slug": "general",
+                "title": "General",
+                "description": "",
+                "parent": 0,
+                "post_count": 14
+            }
+        ],
+        "tags": [],
+        "author": {
+            "id": 2,
+            "slug": "tomdale",
+            "name": "Tom Dale",
+            "first_name": "Tom",
+            "last_name": "Dale",
+            "nickname": "tomdale",
+            "url": "",
+            "description": ""
+        },
+        "comments": [],
+        "attachments": [
+            {
+                "id": 785,
+                "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/Bill_and_ted_be_excellent_to_each_other.gif",
+                "slug": "bill_and_ted_be_excellent_to_each_other",
+                "title": "Bill_and_ted_be_excellent_to_each_other",
+                "description": "",
+                "caption": "",
+                "parent": 781,
+                "mime_type": "image\/gif",
+                "images": {
+                    "full": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/Bill_and_ted_be_excellent_to_each_other.gif",
+                        "width": 500,
+                        "height": 206
+                    },
+                    "thumbnail": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/Bill_and_ted_be_excellent_to_each_other-150x150.gif",
+                        "width": 150,
+                        "height": 150
+                    },
+                    "medium": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/Bill_and_ted_be_excellent_to_each_other-300x123.gif",
+                        "width": 300,
+                        "height": 123
+                    },
+                    "large": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/Bill_and_ted_be_excellent_to_each_other.gif",
+                        "width": 500,
+                        "height": 206
+                    }
+                }
+            }
+        ],
+        "comment_count": 0,
+        "comment_status": "closed",
+        "custom_fields": {}
+    },
+    {
+        "id": 622,
+        "type": "post",
+        "slug": "my-ios-7-wishlist",
+        "url": "http:\/\/tomdale.net\/2013\/01\/my-ios-7-wishlist\/",
+        "status": "publish",
+        "title": "My iOS 7 Wishlist",
+        "title_plain": "My iOS 7 Wishlist",
+        "content": "<p>Actually, it&#8217;s not a list at all. There&#8217;s just one thing I want from iOS 7.<\/p>\n\n<p>I want it to expose sufficiently powerful hooks that Google could implement Google Now for iOS.<\/p>\n\n<p>A few months ago, I switched from my iPhone 4S to a Nexus 4. This was quite an aberration for me, as I have been a dyed-in-the-wool Apple fan since the age of 7. The first computer I ever used at home was a Color Classic II (33MHz 68030, 80MB hard drive, 4MB of RAM), I read every issue of <em>MacAddict<\/em> magazine since issue 1, and landing jobs at Apple (first at an Apple Store in college, and then on the MobileMe team afterwards) were some of the most rewarding moments I&#8217;ve ever experienced.<\/p>\n\n<p>As proof, here&#8217;s a photo of me, age 15, right after Macworld Expo, wearing my Mac OS X t-shirt (it had just been announced):<\/p>\n\n<p><img src=\"http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/tom-at-macworld-1024x674.jpg\" alt=\"tom-at-macworld\" width=\"500\" height=\"329\" class=\"aligncenter size-large wp-image-625\" \/><\/p>\n\n<p>The first few versions of Android were awful, awkward, ungainly things, not too unlike the chubby teenager in the photo above. But everyone grows up and matures. Jellybean has been a dream to use. There are some rough edges, but the moments where I wish I still had my iPhone are few and far between.<\/p>\n\n<p>I&#8217;d rather be an iPhone user, though. The build quality of the hardware is still far superior, and I prefer the smaller size. I don&#8217;t have small hands, but they&#8217;re not overly large, either. Trying to tap elements near the top of the screen single-handedly on the Nexus 4 feels a bit too much like yoga for my tastes.<\/p>\n\n<p>When I was driving home from the holidays this December, I hit a pothole and blew out two tires on a remote stretch of highway about 100 miles south of San Francisco. It was that moment that made me realize just how important battery life is. I can mitigate the Nexus 4&#8242;s poor battery life in my day-to-day by just leaving it plugged in at the office. But outlier events like traveling and emergencies can be a wake-up call that sometimes you will be away from a power source for extended amounts of time, and I for one depend immensely on my phone in those situations. I was glad my travel partner had an iPhone, or I&#8217;m not sure what I would have done.<\/p>\n\n<p>Yet, my entire digital life runs on non-Apple digital services. Through a combination of technical and business restrictions, Apple has made using those services on iOS terrible. Two examples:<\/p>\n\n<p>I love reading books on Kindle. Having constant access to my entire library has dramatically increased the amount I read. But Apple prevents Amazon from integrating a storefront into the Kindle app for iOS, because they want a 30% cut. I&#8217;ll let others argue over whether that makes sense from a business perspective, but I want to offer this data point: I&#8217;d buy another Android phone instead of an iPhone, because developers can offer me the experience they think is best. I don&#8217;t want to think about how many man-hours startups have burned trying to dance as close to the edge of the rules as they can, figuring out ways to avoid the Apple tax. Thirty percent is significant.<\/p>\n\n<p>Second, Google Now is an amazing feature that I think Apple is going to have a hard time competing with. If you&#8217;re unfamiliar with it, the introduction video does a good job of explaining it:<\/p>\n\n<p><iframe width=\"500\" height=\"281\" src=\"http:\/\/www.youtube.com\/embed\/pPqliPzHYyc?feature=oembed\" frameborder=\"0\" allowfullscreen><\/iframe><\/p>\n\n<p>Let me emphasize why this feature is amazing. Let&#8217;s say I&#8217;m traveling to Prague for a conference. Let&#8217;s also say that I&#8217;m an AT&amp;T customer, so data rates abroad will be usurious. More than likely, I&#8217;ll keep data off, unless there&#8217;s an emergency.<\/p>\n\n<p>The conference organizer books me my airline ticket and hotel, and forwards the confirmation e-mail on to me. Assuming I&#8217;m using Gmail, this <strong>single event<\/strong> can trigger the following:<\/p>\n\n<ul>\n<li>On the day of travel, my flight status will be displayed prominently.<\/li>\n<li>If there is a change to the flight, it sends a push notification.<\/li>\n<li>One-tap navigation from my current location to the airport.<\/li>\n<li>It will send a push notification when it is time to leave for the airport to arrive on time, taking traffic conditions and flight status into account.<\/li>\n<li>If I&#8217;ve checked in online, my boarding pass will be cued up automatically.<\/li>\n<li>When I land, it will have already pulled up directions from the airport to my destination hotel.<\/li>\n<li>It will have already downloaded vector map data for the destination city, so I can still navigate despite my lack of data.<\/li>\n<\/ul>\n\n<p>This is groundbreaking. It will change the way people travel. And this is just one small facet of Google Now, which I view as the vector by which Google has figured out how to weaponize the stack of PhDs it has been accumulating for the past decade.<\/p>\n\n<p>And it&#8217;s getting better all of the time. The culture inside Apple is one of a giant metronome, which ticks once or twice per year. The whole company is oriented around secrecy, followed by a big bang release. That works tremendously well for hardware, and for big software launches like an operating system. But it&#8217;s just terrible for web services; especially heavily data-driven ones.<\/p>\n\n<p>The companies that are best at web services are less like a synchronized metronome and more like a group of crickets, each team releasing incremental improvements that over time amount to something quite significant indeed.<\/p>\n\n<p>I&#8217;m not optimistic that Apple&#8217;s culture can change, and I&#8217;m not sure I want it to. But I do want iCloud (and Siri, and Apple Maps) to have to compete on an even playing field. Mobile devices aren&#8217;t the grand experiment they were in 2007. At the time, and in the years afterwards, I was supportive of the restrictions Apple put in place to guard the user experience. It&#8217;s a different world, though, and people are chafing against them. It&#8217;s hampering innovation. Android is effectively the escape valve for mobile developers that want to do cool new stuff that doesn&#8217;t fit inside the box that Apple gives you.<\/p>\n\n<p>And that&#8217;s a bummer. There will be more products like Google Now in the future, not less. I want to be an iPhone user, but I also want access to all of the cool new stuff.<\/p>\n\n<p>So, that&#8217;s my hope for iOS 7: make public the OS hooks that things like Siri and Maps use. Let me run different browsers. Let me replace the built-in e-mail app. We&#8217;ve appreciated the guidance, but we&#8217;ve all got the hang of this smartphone thing now. Let us do what we want.<\/p>\n\n<p>And for the love of God, figure out a way to get Google Now on my iPhone.<\/p>\n\n<p><em>Tell me why I&#8217;m an idiot for having this opinion by tweeting <a href=\"https:\/\/twitter.com\/tomdale\">@tomdale<\/a>.<\/em><\/p>\n",
+        "excerpt": "<p>Actually, it&#8217;s not a list at all. There&#8217;s just one thing I want from iOS 7. I want it to expose sufficiently powerful hooks that Google could implement Google Now for iOS. A few months ago, I switched from my iPhone 4S to a Nexus 4. This was quite an aberration for me, as I [&hellip;]<\/p>",
+        "date": "2013-01-21 11:53:39",
+        "modified": "2013-01-23 22:37:07",
+        "categories": [
+            {
+                "id": 1,
+                "slug": "general",
+                "title": "General",
+                "description": "",
+                "parent": 0,
+                "post_count": 14
+            }
+        ],
+        "tags": [],
+        "author": {
+            "id": 2,
+            "slug": "tomdale",
+            "name": "Tom Dale",
+            "first_name": "Tom",
+            "last_name": "Dale",
+            "nickname": "tomdale",
+            "url": "",
+            "description": ""
+        },
+        "comments": [
+            {
+                "id": 27209,
+                "name": "DS",
+                "url": "",
+                "date": "2013-01-21 12:32:17",
+                "content": "<p>I would like, as a very minimal start towards Google Now-like functionality, for them to put the Notification Center on the lockscreen, like in these jailbreak apps: <a href=\"http:\/\/www.imore.com\/lockinfo-intelliscreenx-ios-5-jailbreak\" rel=\"nofollow\">http:\/\/www.imore.com\/lockinfo-intelliscreenx-ios-5-jailbreak<\/a>.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27214,
+                "name": "Julio Barros",
+                "url": "http:\/\/E-String.com",
+                "date": "2013-01-21 12:46:19",
+                "content": "<p>That is an interesting idea Tom. \nI feel that to asses its likelihood we might want to examine the ways it could benefit Apple.\nHow many can you think of? Are they more likely to try to develop &#8220;Apple Now&#8221; (enhanced Siri)?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27216,
+                "name": "Rasool",
+                "url": "",
+                "date": "2013-01-21 13:23:10",
+                "content": "<p>Tom I agree with many of the points above. One thing I would note however is that using the Kindle store from within iOS is not that difficult simply create shortcut on your home screen to the webpage for the store. That being said i feel like ios has become too much of a police state mobile os. It won&#8217;t be long before the pull of freedom brings me back to android.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27217,
+                "name": "Edwin",
+                "url": "",
+                "date": "2013-01-21 13:23:18",
+                "content": "<p>Apple should produce the ultimate Android phone (aPhone?). It would be vastly more effective against Samsung than suing them. Apple will never get serious about web services and it will, it would be an Apple\/Google win\/win.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27218,
+                "name": "Josh",
+                "url": "http:\/\/josh.com",
+                "date": "2013-01-21 13:24:05",
+                "content": "<p>Apple would benefit by having fewer customer defections to Google products because of being locked down.<\/p>\n\n<p>Apple started out only allowed certain developers build apps for the iOS but they opened it up to everyone (with the 30% tax). It greatly benefited their market share then with iPhone and it still is benefiting them with iPad.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27219,
+                "name": "NAME: required",
+                "url": "",
+                "date": "2013-01-21 13:43:57",
+                "content": "<p>That 30% cut doesn&#8217;t all go to apple sometimes. iTunes gift card resellers may get at least 20% according to gift card discounts.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27232,
+                "name": "Sam",
+                "url": "",
+                "date": "2013-01-21 15:51:06",
+                "content": "<p>It is crazy that on iOS I can&#8217;t reply to an email and attach a file. Or start a new message and attach arbitrary files. I think this is due to the locked-down sandbox architecture of the OS and not simply a missing feature of the mail app. If some of the huge shortcomings of iOS are baked-in, how likely is change beyond incremental stuff like tweaking the gradients?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27234,
+                "name": "Anthony",
+                "url": "",
+                "date": "2013-01-21 16:08:12",
+                "content": "<p>I think you&#8217;re referring to a Galaxy Nexus rather than a Nexus 4, as the Nexus 4 has not even been shipping for a &#8216;few months&#8217;, and has great battery life. On the other hand the Galaxy Nexus has pathetic battery life and has been out for around a year.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27236,
+                "name": "What Eva",
+                "url": "",
+                "date": "2013-01-21 16:19:51",
+                "content": "<p>How does it deliver all that data do you (vector maps, for example) if you have data off?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27237,
+                "name": "What Eva",
+                "url": "",
+                "date": "2013-01-21 16:21:42",
+                "content": "<p>&#8220;It is crazy that on iOS I can\u2019t reply to an email and attach a file.&#8221;<\/p>\n\n<p>Or browse the Web and download something.  Or share files between applications.  But Apple insists that you don&#8217;t need a file system.  Just like nobody needs to change a battery.  And no developer needs to sync data with a counterpart app on the computer.  But EVERYONE needs their devices to be pointlessly THINNER.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27238,
+                "name": "C",
+                "url": "",
+                "date": "2013-01-21 16:55:35",
+                "content": "<p>My Galaxy Note 2 battery life can last a day and a half! I honestly don&#8217;t know how people can stand the non personal touches of an iPhone and I have been a Mac addict since I was little too! My first computer was an Apple IIc. Unfortunately, Apple devices angered me when they decided to stop updating my 2 yr old iPad. These decisions make me sad&#8230;.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27239,
+                "name": "Adam",
+                "url": "",
+                "date": "2013-01-21 16:58:29",
+                "content": "<p>I think you&#8217;re very confused. Google Now on iOS would not require any extra hooks; Google just hasn&#8217;t decided they want to do it. At present, Google Now is a differentiator for Android that doesn&#8217;t directly generate any revenue, so why would they put it on iOS at all?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27242,
+                "name": "Leonid",
+                "url": "",
+                "date": "2013-01-21 17:34:04",
+                "content": "<p>I hate the current Google hyping as much as I hated the Apple hyping back then.\nA hype is a hype, that&#8217;s what it is. It&#8217;s irrational by definition.\nIt was irrational to walk into Apple&#8217;s walled garden and it&#8217;s likewise irrational to hand out all your data to Google, which is today&#8217;s big brother. Remember: If the service is (almost) for free, you&#8217;re not the customer &#8211; you&#8217;re the product.\nBoth Apple and Google are inherently evil companies.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27245,
+                "name": "AJ",
+                "url": "",
+                "date": "2013-01-21 17:57:17",
+                "content": "<p>Great read Tom, thanks!<\/p>\n\n<p>I&#8217;d recommend a car charger for your Nexus.  I use mine a lot, great if you forget to charge over night or get caught out like you did.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27248,
+                "name": "John",
+                "url": "http:\/\/www.dev.gd\/",
+                "date": "2013-01-21 18:19:38",
+                "content": "<p>Honestly, I&#8217;d be happy with just an analog to Android&#8217;s share intents. Whenever I go back to iOS (my iPad mostly) I&#8217;m so frustrated by not being to easily swap data between apps.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27250,
+                "name": "Juliet",
+                "url": "",
+                "date": "2013-01-21 18:56:53",
+                "content": "<p>@Sam: switch to the gallery app, choose the picture, bring up the action menu, select &#8220;Copy&#8221;, go back to your e-mail and &#8220;Paste&#8221;.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27252,
+                "name": "Chris Strat",
+                "url": "",
+                "date": "2013-01-21 19:45:44",
+                "content": "<p>@Sam: In a new email just click once, the popup menu for copy\/paste appears. Scroll right and click on &#8220;Insert Photo or Video&#8221;. This was an iOS6 addition.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27262,
+                "name": "MacMorri",
+                "url": "",
+                "date": "2013-01-21 23:17:02",
+                "content": "<p>Thumbs up for many points about more freedom on iOS. If only you wouldn&#8217;t glorify that &#8220;none needs privacy&#8221; company Google that much. What&#8217;s the point in exchanging one evil thing for another one ?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27270,
+                "name": "Maxim",
+                "url": "",
+                "date": "2013-01-22 00:29:24",
+                "content": "<p>I don&#8217;t buy the Google now example you brought. Do you really used it this way or is it more of a theoretical thought? \nYou want to have your data connection off, but still having actual data about your departure and downloading maps for your destination. By the way some of the functionality you describe is already covered by PassBook. 3rd party applications just have to incorporate those better. \nHowever I totally agree with you on continues delivery for apple services. They absolutely should do that, but as far as I know they do enhance maps, there website etc. without big announcement and in much shorter iterations.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27388,
+                "name": "Jb vance",
+                "url": "",
+                "date": "2013-01-23 04:30:44",
+                "content": "<p>You&#8217;re not going to get google now or any cool google innovations on iphone&#8230;. Android is owned by Google and they have no reason to o help the asshole competition that founders and sues anyone who tries to share technology.  Apple is the past.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 27389,
+                "name": "Jb vance",
+                "url": "",
+                "date": "2013-01-23 04:34:54",
+                "content": "<p>Oh and remember,  unlike you&#8217;re old iphone,  all androids have an upgradeable battery.  I put a 4500 mah battery in my S3 for 22 bucks on Amazon,  which gives me waaay longer life than an iphone even with my 4.8&#8243; screen and much more busy desktop and background app usage.<\/p>\n",
+                "parent": 0
+            }
+        ],
+        "attachments": [
+            {
+                "id": 625,
+                "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/tom-at-macworld.jpg",
+                "slug": "tom-at-macworld",
+                "title": "tom-at-macworld",
+                "description": "",
+                "caption": "",
+                "parent": 622,
+                "mime_type": "image\/jpeg",
+                "images": {
+                    "full": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/tom-at-macworld.jpg",
+                        "width": 2744,
+                        "height": 1808
+                    },
+                    "thumbnail": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/tom-at-macworld-150x150.jpg",
+                        "width": 150,
+                        "height": 150
+                    },
+                    "medium": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/tom-at-macworld-300x197.jpg",
+                        "width": 300,
+                        "height": 197
+                    },
+                    "large": {
+                        "url": "http:\/\/tomdale.net\/wp-content\/uploads\/2013\/01\/tom-at-macworld-1024x674.jpg",
+                        "width": 1024,
+                        "height": 674
+                    }
+                }
+            }
+        ],
+        "comment_count": 21,
+        "comment_status": "closed",
+        "custom_fields": {}
+    },
+    {
+        "id": 602,
+        "type": "post",
+        "slug": "ember-routing",
+        "url": "http:\/\/tomdale.net\/2012\/05\/ember-routing\/",
+        "status": "publish",
+        "title": "Our Approach to Routing in Ember.js",
+        "title_plain": "Our Approach to Routing in Ember.js",
+        "content": "<p>The URL is an important strength that the web has over native apps. In web apps, the URL goes beyond just being a static reference to the location of a document on a server. The best way to think of it is as the serialization of the application\u2019s current state. As the user interacts with the application, the URL should update to reflect what the user is seeing on their screen.<\/p>\n\n<p>In most applications, state is tracked in an ad hoc way. To answer the question <em>&#8220;What is the current state of the application?&#8221;<\/em> you must synthesize several different properties (usually stashed away on different controllers) to arrive at an answer. If there are bugs in your application, it is possible to get into a conceptually broken state. For example, imagine you have an  <code>isAuthenticated<\/code> property that is <code>true<\/code> but there is no <code>currentUser<\/code> property. How did you get into this state? Diagnosing these kinds of bugs is difficult. And more importantly, serializing that state in a sane way is basically impossible, because it\u2019s scattered across the application.<\/p>\n\n<p>Ember.js&#8217; implementation of state charts solves these issues nicely. Using <code>Ember.StateManager<\/code>, you describe your application as a hierarchical tree of objects\u2014one object per conceptual state. Because you explicitly enumerate the possible states, it is impossible to be in an unknown state. And if you try to perform an action in a state that doesn&#8217;t support it, an exception is raised immediately, making it easy to diagnose and debug the problem.<\/p>\n\n<p>It also means that we can easily serialize the state of your application on demand. Assuming you model your application\u2019s behavior using a state manager, we can map the state hierarchy to a URL, and update it as you navigate through the hierarchy.<\/p>\n\n<p>This is an important departure from how most other web frameworks handle routing. They invert the model; the URL is the source of truth for the current state of the application. To change states (for example, to show a different view), you hardcode the URL into your application. If I want to display a photo with an ID of 1, I must synthesize the URL <code>'\/photo\/1'<\/code> and send it to my router.<\/p>\n\n<p>This approach is not ideal for several reasons.<\/p>\n\n<p>First, it couples your URLs to your application code. Changing segment names means you have to go through your entire app and update the hardcoded strings. It also requires that, if you want to enter a new state, you must go consult the router to be reminded what the particular URL is. Breaking encapsulation this way quickly leads to out-of-control code that is hard to maintain.<\/p>\n\n<p>You\u2019re in for an especially painful experience if you later need to change the hierarchy of your URLs. For example, imagine you have a blog app that displays different kinds of media. You have URLs like this:<\/p>\n\n<ul>\n<li><code>\/posts\/my-favorite-dog-breeds<\/code>\n<\/li><li><code>\/photos\/1234<\/code>\n<\/li><li><code>\/audio\/sweet-child-o-mine.mp3<\/code>\n<\/li><\/ul>\n\n<p>Your app gets so popular that you decide to add multiple blogs:<\/p>\n\n<ul>\n<li><code>\/blogs\/tom\/posts\/my-favorite-dog-breeds<\/code>\n<\/li><li><code>\/blogs\/wycats\/audio\/a-whole-new-world.mp3<\/code>\n<\/li><\/ul>\n\n<p>You now need to audit every URL in your application! With Ember&#8217;s approach, it&#8217;s as simple as adding a route property to the parent state to have it start appearing in the URL. Because state changes are triggered by events being sent to your state manager by your views (instead of them routing to a specific URL), nothing in your view code changes.<\/p>\n\n<p>The other problem with describing state in terms of URLs is that there is a cumbersome and pointless serialization step. In my JavaScript, I am dealing with controllers and model objects. Having to turn them into a string form just to get them to interact is brittle and unnecessary.<\/p>\n\n<p>To use the photo example from above, which one of these is nicer?<\/p>\n\n<p><pre>stateManager.send('showPhoto', user, photo);<\/pre><\/p>\n\n<p><pre>\nvar url = '#\/user\/' + user.get('id') + '\/photo\/' + photo.get('id');\nrouter.route(url);\n<\/pre><\/p>\n\n<p>Having multiple sources of truth in any application quickly leads to chaos. One of the primary benefits of Ember.js is that it ruthlessly moves truth about your application state out of the DOM and into JavaScript. The DOM is always just a reflection of the current truth in JavaScript.<\/p>\n\n<p>The work we&#8217;re doing on routing in Ember.js will have a similar effect on keeping truth out of the URL. The URL becomes just a reflection of the current truth in JavaScript. Because state managers allow you define your application state in an encapsulated and semantically rich way, changing how your URLs are built is as easy as changing a few properties on the state objects.<\/p>\n\n<p>For a more concrete description of how routing ties into Ember&#8217;s state managers, see <a href=\"https:\/\/gist.github.com\/2679013\">Yehuda&#8217;s gist, which includes code samples<\/a>. This work is currently happening on Ember&#8217;s <code>routing<\/code> branch, but we hope to merge it into master soon.<\/p>\n\n<p>I&#8217;m really excited about this feature. We&#8217;ve been thinking about this problem for a while now and it&#8217;s satisfying to finally be able to start working on it. I think that explicitly modeling application state using objects is a very exciting and powerful technique, and getting routing &#8220;for free&#8221; by doing it makes it a no-brainer.<\/p>\n",
+        "excerpt": "<p>The URL is an important strength that the web has over native apps. In web apps, the URL goes beyond just being a static reference to the location of a document on a server. The best way to think of it is as the serialization of the application\u2019s current state. As the user interacts with [&hellip;]<\/p>",
+        "date": "2012-05-14 08:57:45",
+        "modified": "2013-01-23 22:37:07",
+        "categories": [
+            {
+                "id": 1,
+                "slug": "general",
+                "title": "General",
+                "description": "",
+                "parent": 0,
+                "post_count": 14
+            }
+        ],
+        "tags": [],
+        "author": {
+            "id": 2,
+            "slug": "tomdale",
+            "name": "Tom Dale",
+            "first_name": "Tom",
+            "last_name": "Dale",
+            "nickname": "tomdale",
+            "url": "",
+            "description": ""
+        },
+        "comments": [
+            {
+                "id": 13084,
+                "name": "Ismael",
+                "url": "",
+                "date": "2012-05-14 09:54:23",
+                "content": "<p>Great summary of the motivations behind the new router.<\/p>\n\n<p>I&#8217;ve been reading\/experimenting with HATEOAS principles for HTTP APIs, specifically the bit where the API response specifies what state a resource is in and what states it can transition to next (by declaring &#8220;rel&#8221; URLs and control semantics)<\/p>\n\n<p>Do you see it as a possibility that Ember could dynamically build it&#8217;s state machine definition based on the one provided by the server?<\/p>\n\n<p>Does that even make sense?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 13089,
+                "name": "Sam",
+                "url": "",
+                "date": "2012-05-14 10:10:50",
+                "content": "<p>That&#8217;s awesome, it&#8217;s always been painful to construct URLs to invoke routes, looking forward to trying this out.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 13106,
+                "name": "Christopher Meiklejohn",
+                "url": "",
+                "date": "2012-05-14 19:46:42",
+                "content": "<p>Fantastic!<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 13111,
+                "name": "ManoHaran",
+                "url": "",
+                "date": "2012-05-14 23:21:49",
+                "content": "<p>Do you have any plan to support HTML 5 history functionality?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 13112,
+                "name": "Sanat Gersappa",
+                "url": "",
+                "date": "2012-05-15 01:03:51",
+                "content": "<p>Cool. Sounds good.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 13142,
+                "name": "Adam",
+                "url": "",
+                "date": "2012-05-15 12:40:23",
+                "content": "<p>Impressive!  Looking forward to trying it out.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 13155,
+                "name": "Rhys Brett-Bowen",
+                "url": "http:\/\/rhysbrettbowen.com",
+                "date": "2012-05-15 16:56:24",
+                "content": "<p>I thought people were already doing this? In any framework with routing I always just extend the router and have that deal with the routing and navigating and to change state you pass it information.<\/p>\n\n<p>I then just have the state as a model (you can then bind to changes of that to navigate and use it&#8217;s sync to fire routing if you want to go one step further).<\/p>\n\n<p>The state manager will still construct the urls right? being able to pass state as a url is a very handy feature.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 13672,
+                "name": "Ido Green",
+                "url": "http:\/\/greenido.wordpress.com",
+                "date": "2012-05-20 03:23:29",
+                "content": "<p>Looks very powerful. I can&#8217;t wait to have some time to check it out on a simple app I&#8217;ve made.<\/p>\n\n<p>Thanks!<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 13692,
+                "name": "Dominik Guzei",
+                "url": "http:\/\/wizzart.at",
+                "date": "2012-05-20 08:00:57",
+                "content": "<p>We are using ember-routemanager (<a href=\"https:\/\/github.com\/ghempton\/ember-routemanager\" rel=\"nofollow\">https:\/\/github.com\/ghempton\/ember-routemanager<\/a>) for our application to do exactly what you described <img src=\"http:\/\/tomdale.net\/wp-includes\/images\/smilies\/icon_smile.gif\" alt=\":-)\" class=\"wp-smiley\" \/>  Looking forward to have this stuff in the core of Ember!<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 14048,
+                "name": "Serge",
+                "url": "http:\/\/soundcloud.com\/serge-seletskyy",
+                "date": "2012-05-22 14:40:02",
+                "content": "<p>It&#8217;s a good step ahead. Thank you Tom<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 15364,
+                "name": "Akshay",
+                "url": "http:\/\/akshay.cc",
+                "date": "2012-06-01 21:48:50",
+                "content": "<p>Having trouble keeping up with all the quality emberjs blogs floating around. Is it possible to start a weekly newsletter, much like how RubyMotion did &#8211; <a href=\"http:\/\/rubymotionweekly.com\/\" rel=\"nofollow\">http:\/\/rubymotionweekly.com\/<\/a><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 16056,
+                "name": "Thiago Santos",
+                "url": "",
+                "date": "2012-06-12 10:46:48",
+                "content": "<p>I really like the RouteManager extension found here <a href=\"https:\/\/github.com\/ghempton\/ember-routemanager\" rel=\"nofollow\">https:\/\/github.com\/ghempton\/ember-routemanager<\/a><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 19334,
+                "name": "Tim",
+                "url": "http:\/\/timothy.overly.me",
+                "date": "2012-07-19 08:58:25",
+                "content": "<p>&#8220;One of the primary benefits of Ember.js is that it ruthlessly moves truth about your application state out of the DOM and into JavaScript&#8221;&#8230;\nI have to say I like it when people are ruthless.<\/p>\n",
+                "parent": 0
+            }
+        ],
+        "attachments": [],
+        "comment_count": 13,
+        "comment_status": "closed",
+        "custom_fields": {}
+    },
+    {
+        "id": 593,
+        "type": "post",
+        "slug": "best-practices-exist-for-a-reason",
+        "url": "http:\/\/tomdale.net\/2012\/04\/best-practices-exist-for-a-reason\/",
+        "status": "publish",
+        "title": "Best Practices Exist for a Reason",
+        "title_plain": "Best Practices Exist for a Reason",
+        "content": "<p>If you&#8217;ve ever used node.js, you&#8217;ve probably also used Isaac Schlueter&#8217;s npm, the node package manager. By maintaining a central repository to which authors can quickly publish their JavaScript modules, npm has made it easy to get started building node apps and its popularity has exploded over the past year. Unfortunately, two months ago, <a href=\"https:\/\/gist.github.com\/2001456\">the hashed passwords of all npm accounts were leaked.<\/a> npm uses CouchDB for its backend, and the default security model is to grant administrator access to all databases, but only when connections originate from the same machine. It appears that in this case, the CouchDB server was made accessible to the world over HTTP with the default access settings left in place.<\/p>\n\n<p>In retrospect, it&#8217;s obviously a dumb mistake, but the same kind of dumb mistake you or I or anyone ten times smarter than us could make; whether because we&#8217;re sick or tired or under pressure or simply because we&#8217;re using a new system that we&#8217;ve never used before.<\/p>\n\n<p>The community&#8217;s reaction to the security leak was relatively forgiving, and rightly so. After all, npm is a community project that was created and is maintained for free, and we all benefit from the enormous amount of time and energy that Isaac and the other npm contributors have generously donated.<\/p>\n\n<p>And yet, npm is no longer just a hobby project. Thousands of people rely on it to provide services to themselves, their friends, and to paying customers. Additionally, when it comes to security, there can be repercussions far beyond the original breach. Anyone who created an npm account and used the same password for another web service is potentially at risk.<\/p>\n\n<p>So this is the eternal balancing act that open source maintainers (and, indeed, many startups) must face: limited time and resources for building, securing and maintaining systems that will be used by hundreds, thousands, or even millions of people.<\/p>\n\n<p>Which is why I have been so saddened and, yes, angry, about the recent trend in the JavaScript community; to throw away the best practices we have spent a long time honing in what, to my eyes, is an act of machismo; a revolt against good engineering practices for the sake of revolting rather than to make the world a better place.<\/p>\n\n<p>As a community we&#8217;ve advocated for these things precisely because most comers to JavaScript are not us, not as invested in the language and the ecosystem as us; but rather have been thrown at some problem because all of a sudden it&#8217;s 2012 and not writing JavaScript is no longer an option. They are not JavaScript developers per se; they are Java developers or Ruby developers or .NET developers or any of the thousands of possible kinds of developers who are now thrust into this unfamiliar world where JavaScript is the substrate that holds the web together.<\/p>\n\n<p>Here&#8217;s the thing about best practices: at the point at which you become sufficiently experienced, you understand why they are good and so can choose to not use them as the situation allows. Your understanding of the language or the ecosystem or the particular problem at hand has allowed you to view the problem from the same vantage point of the people that came up with those best practices; and so you are free to discard them if the situation merits.<\/p>\n\n<p>But until your understanding has crystallized, not following those best practices can cost you hours of wasted time tracking down bugs that didn&#8217;t have to otherwise exist. But <strong>writing code before you have an expert-level understanding is okay<\/strong>. It&#8217;s okay because it is reality and there is nothing you can do to change the fact that people with a very tenuous grasp of these technologies are being thrown at hard problems that they will solve one way or another.<\/p>\n\n<p>Which is why I have to admit that my blood boiled when I read <a href=\"http:\/\/blog.izs.me\/post\/2353458699\/an-open-letter-to-javascript-leaders-regarding\">Isaac&#8217;s post about automatic semicolon insertion<\/a>. I don&#8217;t want to re-litigate the semicolon debate because I think we were all tired of it before it even began. What I want to highlight is a general attitude that I find very disappointing:<\/p>\n\n<blockquote>\nI am sorry that, instead of educating you, the leaders in this language community have given you lies and fear.\n<\/blockquote>\n\n<p>By couching it in these terms, it implies that anyone who follows best practices has given in to &#8220;lies and fear!&#8221; Who wants to be swayed by that?<\/p>\n\n<p>A more generous interpretation is that the leaders Isaac accuses of spreading lies and fear know that the reality is that you have a month to ship a JavaScript app, and asking you to understand the ECMAScript spec is not reasonable. (Because it&#8217;s not just automatic semicolon insertion, right? It&#8217;s <code>this<\/code> binding and anonymous functions and a million other features of JavaScript that confuse newcomers.)<\/p>\n\n<p>We can&#8217;t front-load complexity and let people sort it out. That way lies madness. We must distill the rules down so that people can be effective, and help them along their journey towards JavaScript mastery. It&#8217;s a learning curve, not a learning cliff.<\/p>\n\n<p>So I have to vehemently disagree with this statement in Isaac&#8217;s post:<\/p>\n\n<blockquote>\nIf you don\u2019t understand how statements in JavaScript are terminated, then you just don\u2019t know JavaScript very well, and shouldn\u2019t write JavaScript programs professionally without supervision\u2026\n<\/blockquote>\n\n<p>I find this staggeringly condescending, but maybe it&#8217;s just my reading of it. But even if my reading is wrong, it rejects reality. Isaac knows this because the npm team deployed a misconfigured CouchDB instance to production <strong>and it&#8217;s not their fault.<\/strong> To suggest they needed &#8220;supervision&#8221; is absurd. They were not expert-level CouchDB users but they had a job to do so they picked the tool and went to town. This is a CouchDB failing; because the best practices were not made clear enough or the default settings were not strict enough.<\/p>\n\n<p>So let&#8217;s learn from our mistakes and realize that the bulk of JavaScript developers are not experts. Let&#8217;s stop tearing down the hard work our predecessors have done to shepherd JavaScript from a toy language to the language that is revolutionizing how the web applications are built. Let&#8217;s embrace good engineering practices and have the sense to know when to ignore them, and not abandon them altogether to prove how smart we are. We&#8217;re all in this together.<\/p>\n",
+        "excerpt": "<p>If you&#8217;ve ever used node.js, you&#8217;ve probably also used Isaac Schlueter&#8217;s npm, the node package manager. By maintaining a central repository to which authors can quickly publish their JavaScript modules, npm has made it easy to get started building node apps and its popularity has exploded over the past year. Unfortunately, two months ago, the [&hellip;]<\/p>",
+        "date": "2012-04-28 20:54:18",
+        "modified": "2013-01-23 22:37:07",
+        "categories": [
+            {
+                "id": 1,
+                "slug": "general",
+                "title": "General",
+                "description": "",
+                "parent": 0,
+                "post_count": 14
+            }
+        ],
+        "tags": [],
+        "author": {
+            "id": 2,
+            "slug": "tomdale",
+            "name": "Tom Dale",
+            "first_name": "Tom",
+            "last_name": "Dale",
+            "nickname": "tomdale",
+            "url": "",
+            "description": ""
+        },
+        "comments": [
+            {
+                "id": 12490,
+                "name": "andy matthews",
+                "url": "http:\/\/andymatthews.net",
+                "date": "2012-05-02 12:30:58",
+                "content": "<p>The thing that makes me laugh about his post is that he shows an example where he places a semicolon in FRONT of a statement rather than before after the previous one.<\/p>\n\n<p>So you can&#8217;t be bothered to put one where it &#8220;belongs&#8221; but you can put one at the beginning of a statement?<\/p>\n\n<p>It just comes down to ambiguity. Take ColdFusion for example&#8230;it has 9 potential scopes in which it can store variables. The documentation is clear on the order in which the server will look for a variable if you do not prepend it with a scope.<\/p>\n\n<p>ARGUMENTS.foo\nURL.foo\netc.<\/p>\n\n<p>If you don&#8217;t specify a scope then the server has to go looking for the variable, potentially through 9 different areas, and potentially getting the incorrect variable along the way. But if you&#8217;re simply explicit in your scoping you save time and possible error.<\/p>\n\n<p>I see the semicolon argument like that. Yes, JavaScript has the ASI rules, just like ColdFusion has rules about scoping. But why not just be explicit and save the engine time and energy?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12496,
+                "name": "Justin Searls",
+                "url": "http:\/\/about.me\/searls",
+                "date": "2012-05-02 13:19:03",
+                "content": "<p>Thanks for taking the time to write this post. The phrase &#8220;best practices&#8221; grates on me a bit, but the reality is that anything the community can do to lower the barrier of entry for &#8220;non-JavaScript per se&#8221; developers is a Good Thing\u2122.<\/p>\n\n<p>Condescensions that claim newcomers should have to learn or do things the hard way is just going to turn people away from the community, encouraging them to keep writing ad hoc, unconventional JavaScript.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12498,
+                "name": "John",
+                "url": "",
+                "date": "2012-05-02 13:32:51",
+                "content": "<p>While the reason you give for always terminating  statements with semicolons is a good one, there is another reason. That other reason is arguably more important because it affects everybody rather than just those unfortunate enough to have to read tricksy code.<\/p>\n\n<p>A widely deployed library that depends on semicolon insertion in this way might break the proposed use of ! as an eventual-send operator. It makes me sad that a genuinely significant syntax innovation like that might get blocked by a backwards step like omission of semicolons in JavaScript. Syntax really does matter. But the battle to get statement termination right was lost years ago in the glorious Netscape muddle. The existence of the proposed ECMAScript eventual-send extension demonstrates that that battle really was lost &#8212; rather than being lost only for &#8220;people who shouldn&#8217;t write JavaScript without supervision&#8221;. Perhaps if the eventual-send operator does not happen, people will end up using inferior concurrency mechanisms to the one outlined in the ! proposal. That makes me suspect that the net contribution of twitter bootstrap to the world will be negative, which is also sad.<\/p>\n\n<p><a href=\"http:\/\/wiki.ecmascript.org\/doku.php?id=strawman:concurrency\" rel=\"nofollow\">http:\/\/wiki.ecmascript.org\/doku.php?id=strawman:concurrency<\/a><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12499,
+                "name": "John",
+                "url": "",
+                "date": "2012-05-02 13:35:47",
+                "content": "<p>Just to be clear(er): I&#8217;m a full-time long-serving Pythonista who believes that semicolons are the spawn of the devil. But that is less important than having a good and popular concurrency mechanism.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12505,
+                "name": "Alex",
+                "url": "http:\/\/blog.alexrohde.com",
+                "date": "2012-05-02 14:15:06",
+                "content": "<p>The issue with best-practice is a community one. Sure best practice <em>guidelines<\/em> (not rules) can exist, and they may be helpful for many novices, but the flipside is that people seem to forget that these guidelines can and should be excepted for advanced users, until you end up with literally &#8220;eval=evil&#8221; (2 legs bad, 4 legs good anyone?).<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12506,
+                "name": "Isaac Z. Schlueter",
+                "url": "http:\/\/blog.izs.me\/",
+                "date": "2012-05-02 14:20:12",
+                "content": "<p>There are a few points where I think you&#8217;ve misunderstood me.<\/p>\n\n<p>First of all, &#8220;supervision&#8221; is not intended to be derogatory. I just mean you ought to check your work with someone else, preferably someone with more experience than you have.<\/p>\n\n<p>The concept of a &#8220;statement&#8221; is actually a pretty core concept in JavaScript, and not a particularly difficult one to master.  I explain it fully in that blog post.  That&#8217;s why it boggles my mind that so many self-proclaimed JavaScript experts seem perfectly content to teach the intricacies of this-binding and prototypes, and yet when it comes to statement termination, they clam up, claim it&#8217;s too hard for newcomers, and insist on solving this problem by imposing C style and pretending that white space isn&#8217;t significant (even though it still is, and still bites in restricted productions!)<\/p>\n\n<p>Second, I don&#8217;t think that I ought to use CouchDB without supervision.  That&#8217;s why it&#8217;s hosted on IrisCouch, and Jason Smith, who is a CouchDB committer, helps maintain it.  He helped a lot to get the required features into CouchDB to enable the security we now enjoy.  I have a lot of supervision in that area.  Actually, I even make sure that my JavaScript commits to Node.js are reviewed by other committers, because supervision is a great thing.  Experts are human, too.<\/p>\n\n<p>As far as my condescending attitude regarding semicolons and JavaScript leaders: if a person can&#8217;t be bothered to learn the language, then they&#8217;re not an expert, and should not be in the habit of dispensing advice.  That&#8217;s not to say they&#8217;re not welcome, or shouldn&#8217;t experiment, or can&#8217;t write useful programs, of course.  They can even write very interesting and useful programs, and release them into production.  Just don&#8217;t spread falsehoods, that&#8217;s all.<\/p>\n\n<p>Here&#8217;s a few best practices: Have some rough idea of what you know, and don&#8217;t claim to know more than that.  When in unfamiliar territory, do your best to learn, test assumptions, seek help, and be humble.<\/p>\n\n<p>I have absolutely zero sympathy for the feelings of anyone who lies to newcomers, or pretends to be a JavaScript expert when he doesn&#8217;t actually know what a statement is.  It&#8217;s not a hard language to master.  But it&#8217;s much harder to master than it ought to be, in large part because of patently false information being dispensed by negligent teachers.<\/p>\n\n<p>THIS is one of the worst problems in JavaScript.  Not that a few random heretics like me don&#8217;t follow Best Practices, but that the Best Practices are being set by people who refuse to preach the truth about the practice.  There is no justification for willfully lying; either they are lying about semicolons, or they&#8217;re lying about being experts.  I&#8217;m not sure which is worse.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12507,
+                "name": "TVD",
+                "url": "http:\/\/techoctave.com\/c7",
+                "date": "2012-05-02 14:21:55",
+                "content": "<p>I don&#8217;t know fellas&#8230;<\/p>\n\n<p>If the browser&#8217;s choices are:\n1. Force feed your code missing syntax\n2. FAIL<\/p>\n\n<p>Then I believe you owe us a better explanation than, &#8220;It&#8217;s a matter of personal preference.&#8221;<\/p>\n\n<p>Why not just use CoffeeScript at that point?<\/p>\n\n<p>Then you can dispense with both semi-colons and braces. In return, you gain high fidelity and reliable JavaScript.<\/p>\n\n<p>Reference:\n<a href=\"https:\/\/github.com\/isaacs\/npm\/blob\/master\/lib\/npm.js\" rel=\"nofollow\">https:\/\/github.com\/isaacs\/npm\/blob\/master\/lib\/npm.js<\/a><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12511,
+                "name": "Nicholas C. Zakas",
+                "url": "http:\/\/www.nczonline.net\/",
+                "date": "2012-05-02 14:52:09",
+                "content": "<p>I whole-heartedly agree with you, Tom. The fact of the matter is, there are a lot of people using JavaScript to solve problems without having a good understanding of the language. This isn&#8217;t a problem unique to JavaScript, it&#8217;s true for all programming languages: the majority of the developers qualify as beginner- or intermediate-level developers. There are very few who understand the intricacies of the language in which they work. Most developers are just looking for the quickest solution to the given problem so they can move on and meet their deadlines.<\/p>\n\n<p>Best practices exist not for the senior- and expert-level developers of the world. They exist for everyone else, to benefit from the experience of those who came before them so they can achieve their goals faster and without hitting major snags. Let&#8217;s face it, most developers don&#8217;t want or need a deep understanding of the language. They just need to get their job done, that&#8217;s it.<\/p>\n\n<p>I support the use of semicolons and will continue to recommend to anyone who listens that they be used. This isn&#8217;t a matter of preference, it&#8217;s a matter of seeing too many errors over the years caused by misunderstanding line termination and automatic semicolon insertion over the years.<\/p>\n\n<p>The truth is, it is easier to explain semicolon usage than it is to explain ASI. In all of my years of teaching and talking about JavaScript, I&#8217;ve never had one person express disappointment that I didn&#8217;t spend time on ASI. In the best case, no one needs to worry about it, in the worst case they figure out that adding a semicolon solves the problem.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12512,
+                "name": "hoopz",
+                "url": "",
+                "date": "2012-05-02 15:35:41",
+                "content": "<p>&#8220;They can even write very interesting and useful programs, and release them into production. Just don\u2019t spread falsehoods, that\u2019s all.&#8221;<\/p>\n\n<p>Amen to this. I also don&#8217;t interpret the original remark as condescending, but rather as an overdue truth.<\/p>\n\n<p>The real issue is that there is a huge chunk of the web industry that is entirely self-taught from crappy second hand tutorials. How many CSS designers have actually read the spec and understand the cascade? How many programmers whine about CSS &#8220;making no sense&#8221; without having done the same?<\/p>\n\n<p>JavaScript is in the same boat. The language got its reputation not from its own merits or defects, but from an entire generation coding in it without a decent background or understanding. It&#8217;s high time we called everyone out on this.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12515,
+                "name": "Ben",
+                "url": "",
+                "date": "2012-05-02 15:55:12",
+                "content": "<p>With regard to the semicolon debate you are loathe to rehash: I think the material of the debate is that one part of the community seems to think it can dictate its own best practices to individuals who clearly don&#8217;t subscribe to them.  I put semi-colons in.  If I didn&#8217;t, I would be pretty mad if somebody told me I had to.  The fact is, I put semicolons in because I like to, sometimes restack code on one line, and because it reduces syntax errors in my PHP because I forget them in the PHP less-often when I put them in the Javascript.  If you object to the invective,  just consider that the author is hurt by the community, and, while, admittedly, responding emotionally, failing to validate those emotions is destructive to the community.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12517,
+                "name": "Benjamin Lupton",
+                "url": "http:\/\/balupton.com",
+                "date": "2012-05-02 15:59:48",
+                "content": "<p>It seems a lot of people are missing the point of Isaacs post.<\/p>\n\n<p>The idea is not &#8220;always use semicolons&#8221; or &#8220;never use semicolons&#8221;.<\/p>\n\n<p>The idea is also not to insult anyone.<\/p>\n\n<p>The idea is &#8220;if you are in a position to recommend practices to another person, then do so without falsehoods&#8221;. It&#8217;s that simple.<\/p>\n\n<p>For example, the whole thing that brought up the debate is people recommending a practice (e.g. semicolon usage &#8211; or the lack thereof) while providing misinformation from misunderstanding, naivety, ignorance or bias.<\/p>\n\n<p>Sure it is perfectly okay to be naive as a new programmer, it is to be expected. No one is arguing against that. Sure new programmers will make mistakes. No one is arguing against that.<\/p>\n\n<p>But, if you are to provide advice to someone, then that places you with a certain responsibility, a responsibility to always ensure that what you are preaching is factually correct.<\/p>\n\n<p>A violation of this was Isaacs example of &#8220;Always use semicolons as ASI is unreliable.&#8221; which he proves, with evidence, is bullshit.<\/p>\n\n<p>Whereas if it were rephrased to something like &#8220;Writing ASI code requires an understanding of javascript statements. This understanding is not apparent in a lot of beginners, as such requiring the use of semicolons can be considered safest. However, if your contributors do understand (or are willing to learn) javascript statements, then practicing semicolon omission can to be equally rewarding. However, there is no absolute best way, the best way is dependent on your project. Pick what you feel is right for your project. If you are unsure, then you can read up some more about requiring semicolons here, or omitting semicolons here. Thanks.&#8221;<\/p>\n\n<p>Which is not what a lot of people who provide advice do. In order to improve the world, misinformation (what isaacs referred to as lies and fear) needs to be addressed, and using the suggestion of only providing educated advice backed by facts and always allowing the option of choice, is the proposed way to help that.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12519,
+                "name": "Isaac Z. Schlueter",
+                "url": "http:\/\/blog.izs.me\/",
+                "date": "2012-05-02 16:30:58",
+                "content": "<p>Ben,<\/p>\n\n<p>Actually, in the article cited, I mention a few great reasons to terminate every statement with semicolons.  One was consistency with other C-style and sh-style languages (such as PHP and Java).  When I was writing a lot of PHP, I even experimented with putting $ in front of JS variables for a similar reason, and it&#8217;s just as harmless (and at times helpful) as excessive semicolons.  Other great reasons for excessive semicolons include politics, aesthetics, and tooling.<\/p>\n\n<p>Less valid reasons include appeasement of the Easter Bunny, safety from ASI attacks, and terrorists.<\/p>\n\n<p>Whatever you do, do it for and because of and in pursuit of Truth.  That transcends code style.  It&#8217;s a life Best Practice.<\/p>\n\n<p>Nicholas,<\/p>\n\n<p>&#8220;There are very few who understand the intricacies of the language in which they work.&#8221;<\/p>\n\n<p>I would not call &#8220;what is a statement&#8221; an intricacy.  It&#8217;s a hello-world-level principle.  If you learn any other language, it&#8217;s usually among the first subjects covered.  It was literally the first thing taught on my first day of C class in college.<\/p>\n\n<p>Also, that&#8217;s bullshit.  Anyone calling themselves a JavaScript professional who hasn&#8217;t ever cracked the ES spec is a fraud.  No other serious language community would allow such irresponsibility, and it gives our entire craft a bad name.<\/p>\n\n<p>&#8220;I support the use of semicolons and will continue to recommend to anyone who listens that they be used.&#8221;<\/p>\n\n<p>I encourage the use of semicolons to prefix statements which would otherwise continue the line above (eg, statements beginning in ( or [), in for(;;) loops, empty blocks, and whenever multiple statements appear on the same line.<\/p>\n\n<p>No one that I&#8217;m aware of honestly suggests that semicolons should never be used.  In fact, in npm-style, the prefixing ; is required even when not strictly necessary, so that moving code around doesn&#8217;t change semantics of the line above.  The goal is ergonomic error reduction.<\/p>\n\n<p>&#8220;In all of my years of teaching and talking about JavaScript, I\u2019ve never had one person express disappointment that I didn\u2019t spend time on ASI.&#8221;<\/p>\n\n<p>Haha!  Of course they didn&#8217;t.  How would they know that there was such a thing to express disappointment about, if you didn&#8217;t cover it?<\/p>\n\n<p>Again, just to be clear, I&#8217;m not saying that people shouldn&#8217;t use semicolons.  I&#8217;m just saying that they shouldn&#8217;t lie about them, and shouldn&#8217;t claim to be JavaScript experts if they don&#8217;t know what a JavaScript statement is.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12520,
+                "name": "hoopz",
+                "url": "",
+                "date": "2012-05-02 16:52:33",
+                "content": "<p>&#8220;If you object to the invective, just consider that the author is hurt by the community, and, while, admittedly, responding emotionally, failing to validate those emotions is destructive to the community.&#8221;<\/p>\n\n<p>In my experience, the opposite is true. Validating every single emotional argument regardless of merit results in your community taking themselves too seriously, and giving the whiny people importance over the smart ones. Sometimes you need someone at the top to just say: &#8220;This is not a real argument. End of story.&#8221;<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12522,
+                "name": "Pablo",
+                "url": "http:\/\/fernandezpablo85.github.com",
+                "date": "2012-05-02 17:35:59",
+                "content": "<p>I don&#8217;t, by all means, think of me as a javascript expert, but I have shipped quite a good amount of it to production. I even have an npm package, featured in javascript weekly.<\/p>\n\n<p>I do not understand ASI.<\/p>\n\n<p>And I don&#8217;t want to.<\/p>\n\n<p>Why? Well I guess that, facing a new javascript problem I can either:<\/p>\n\n<p>1) Use semicolons, stop thinking about it and get shit done.<\/p>\n\n<p>2) Spend time reading about line termination, ASI, etc. Then spend time explaining anyone that has to review\/read my code about it. And, eventually, get shit done.<\/p>\n\n<p>So far, I always find myself choosing option 1.<\/p>\n\n<p>Feel free to call me amateur. I don&#8217;t mind at all.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12523,
+                "name": "Ben Taitelbaum",
+                "url": "http:\/\/coshx.com",
+                "date": "2012-05-02 19:10:44",
+                "content": "<p>As you mention, javascript lies at the intersection of myriad developer communities, so even the term &#8220;best practices&#8221; means very different things depending on who you ask. For example, for the unixy among us, we take the idea of single responsibility very seriously, which can lead to a fear of some of the behemoth frameworks. For the ruby developers, we believe that code should be fun to write and want to minimize syntactic sugar, so we might use a preprocessor (coffeescript). And then you get the choice of whether to interact with js in an OO, functional, or evented manner (yes, we do all of these constantly, but I&#8217;m thinking about the developer mindset which influences design decisions).<\/p>\n\n<p>The fact that javascript is such a playground for these best-practices is what makes it an interesting community.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12524,
+                "name": "Adam Siemiginowski",
+                "url": "http:\/\/ATSiem.com",
+                "date": "2012-05-02 20:09:34",
+                "content": "<p>The attitude you address here, to revolt in a manner which does not ensure greater good, is all too prevalent today.<\/p>\n\n<p>Innovation is a risky game, which is why you do it 10% of the time, and not 100%.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12525,
+                "name": "Steve Holden",
+                "url": "http:\/\/holdenweb.com",
+                "date": "2012-05-02 20:26:14",
+                "content": "<p>Andy Matthews wrote:<\/p>\n\n<p>&#8220;&#8221;&#8221;The thing that makes me laugh about his post is that he shows an example where he places a semicolon in FRONT of a statement rather than before after the previous one.<\/p>\n\n<p>So you can\u2019t be bothered to put one where it \u201cbelongs\u201d but you can put one at the beginning of a statement?\n&#8220;&#8221;&#8221;<\/p>\n\n<p>Believe it or not this is a practice dating back to the punched card, making list items in your deck somewhat easier to delete without wasting cards. Or some such, maybe I have misunderstood your description of the technique.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12529,
+                "name": "Jack B.",
+                "url": "",
+                "date": "2012-05-02 22:36:14",
+                "content": "<p>Tom, can&#8217;t agree more on this post.<\/p>\n\n<p>The ASI issue is getting more and more funny now..even the language CREATOR told people not to rely on ASI, and people are still debating..how stubborn it is?<\/p>\n\n<p>Btw, would be interesting if you can get Yehuda to say something on this&#8230;<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12530,
+                "name": "DZ",
+                "url": "",
+                "date": "2012-05-02 23:43:36",
+                "content": "<p>&#8220;Also, that\u2019s bullshit. Anyone calling themselves a JavaScript professional who hasn\u2019t ever cracked the ES spec is a fraud. No other serious language community would allow such irresponsibility, and it gives our entire craft a bad name.&#8221;<\/p>\n\n<p>JavaScript is in a fairly unique position where many developers that <em>don&#8217;t<\/em> self identify as &#8220;JavaScript professionals&#8221; find themselves needing to write JavaScript.<\/p>\n\n<p>HTML and CSS occupy a similar position, because many times, a dev needs through modify front-end code someone else made, or needs to throw up something quick.<\/p>\n\n<p>Sure, I would expect any developer who calls themselves a JavaScript developer to have read the spec.  Especially people who may be writing JavaScript for node.js.<\/p>\n\n<p>But the fact remains that there are many devs who are required due to circumstances to modify\/write front-end code &#8212; including JavaScript, CSS, HTML &#8212; without having the time to read a spec or gain a thorough understanding.<\/p>\n\n<p>Chances are everyone reading this knows someone who has done it, or has done it before.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12531,
+                "name": "Kevin Nardi",
+                "url": "",
+                "date": "2012-05-03 00:37:26",
+                "content": "<p>I have been writing JavaScript for 16 years, and I have never been bitten by white-space in a restricted production. I use semicolons after every line, because it&#8217;s a C-like language, and that is the best practice. Why would you do anything else? Anything else simply comes from a prideful, stubborn, rebellious attitude. Yes, I appreciate beauty in code. Which is why I like CoffeeScript. ASI is not beautiful. It was a bad idea\u2014as can be seen by the amount of confusion and controversy it causes.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12533,
+                "name": "foljs",
+                "url": "",
+                "date": "2012-05-03 02:53:13",
+                "content": "<p>@Isaac Z. Schlueter<\/p>\n\n<p><b>First of all, \u201csupervision\u201d is not intended to be derogatory. I just mean you ought to check your work with someone else, preferably someone with more experience than you have.<\/b><\/p>\n\n<p>Yes it was intended to be derogatory &#8211;and you even admitted to that saying &#8220;this is the part where I insult you&#8221;.<\/p>\n\n<p><b>The concept of a \u201cstatement\u201d is actually a pretty core concept in JavaScript, and not a particularly difficult one to master.<\/b><\/p>\n\n<p>The concept of best practices is even simpler.<\/p>\n\n<p><b>As far as my condescending attitude regarding semicolons and JavaScript leaders: if a person can\u2019t be bothered to learn the language, then they\u2019re not an expert, and should not be in the habit of dispensing advice.<\/b><\/p>\n\n<p>On the other hand, Brendan Eich and Douglas Cockford both agree that ASI is a bad thing, and they have far more expertise in the language than you have. So maybe it&#8217;s you that didn&#8217;t bother to learn the language  and who shouldn&#8217;t dispense advice.<\/p>\n\n<p>It&#8217;s like some idiot abusing some C side effect that even it&#8217;s inventors abhor and arguing with Thompson and Kernighan that he is correct because compilers understand it just fine.<\/p>\n\n<p><b>I have absolutely zero sympathy for the feelings of anyone who lies to newcomers, or pretends to be a JavaScript expert when he doesn\u2019t actually know what a statement is.<\/b><\/p>\n\n<p>It&#8217;s you who doesn&#8217;t know what ASI is. ASI is not a syntax feature, it&#8217;s a ERROR correction feature. Eich:<\/p>\n\n<p><i>The moral of this story: ASI is (formally speaking) a syntactic error correction procedure. If you start to code as if it were a universal significant-newline rule, you will get into trouble.<\/i><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12538,
+                "name": "notjs",
+                "url": "",
+                "date": "2012-05-03 04:44:40",
+                "content": "<p>@foljs<\/p>\n\n<p>Thanks for summing up a proper response to Isaac.<\/p>\n\n<p>I read the Isaac article, and my thoughts were essentially that here is an idiot that is guarding his walled garden, after the walls have long ago crumbled.<\/p>\n\n<p>To me, best practices should conform to good code that is easy and unambiguous, at least due to formatting. CoffeeScript is actually a horrible deviation. I would much rather have semi-colons than forced significant whitespace. But that is an entirely separate issue, and worthy of a blog in and of itself.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12545,
+                "name": "Anatoliy Chakkaev",
+                "url": "http:\/\/railwayjs.com\/",
+                "date": "2012-05-03 06:43:45",
+                "content": "<p>Vote up for semicolons. Code is being created not for machines, but for humans. The code should be written in the style that won&#8217;t disappoint the reader.<\/p>\n\n<p>Another reason for using semicolons (for me) in additional benefits, such as semicov test coverage tool, which uses semicolons in code to be able to mark &#8220;covered&#8221; lines in code.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12548,
+                "name": "Roger Harford",
+                "url": "http:\/\/www.rogerharford.com",
+                "date": "2012-05-03 07:15:00",
+                "content": "<p>If people are going to argue for not using semi-colons then I say we should start arguing to drop other best practices like using eval() more frequently or omitting var statements.<\/p>\n\n<p>I mean why not? Wouldn&#8217;t all the same arguments apply?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12552,
+                "name": "Christian Romney",
+                "url": "",
+                "date": "2012-05-03 07:50:40",
+                "content": "<p>When I began to read this post, I thought it was written in a reasonable, considered, and non-offensive tone. So what happened in the comment stream? All this &#8220;idiot&#8221; name calling is off-putting and immature. That&#8217;s not name calling. I believe anyone reading a blog post like this is an intelligent human being worthy of respect. Yet none of us is perfect, and we all can and do fall short of the mark from time to time. So let&#8217;s keep the conversation going with a more constructive and respectful tone.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12563,
+                "name": "W",
+                "url": "",
+                "date": "2012-05-03 09:44:39",
+                "content": "<p>@Isaac:<\/p>\n\n<p>&#8220;it boggles my mind that so many self-proclaimed JavaScript experts seem perfectly content to teach the intricacies of this-binding and prototypes, and yet when it comes to statement termination, they clam up, claim it\u2019s too hard for newcomers.&#8221;<\/p>\n\n<p>I don&#8217;t know that it&#8217;s really too <em>hard<\/em> for newcomers so much, and if that&#8217;s the genuine claim, it&#8217;s certainly suspect. But I think the argument might instead be that for the most part, it&#8217;s very easy to state that by and large when writing JS you&#8217;re free to ignore whitespace and assume statements are terminated semi-colon, and then move onto more interesting things. It&#8217;s not entirely true, and in particular I&#8217;d warn a newbie about some dangers that can happen with common idioms involving <code>return<\/code>, but you can more or less take it as true and go for years (with or without supervision) without encountering an edge case.<\/p>\n\n<p>By contrast, the other areas you mentioned involving this  binding and prototypes are necessary to study if you&#8217;re going to use the object-oriented features of JavaScript at all.<\/p>\n\n<p>It&#8217;s pretty easy to see why the emphasis might fall on one and not the other.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12564,
+                "name": "Richard",
+                "url": "",
+                "date": "2012-05-03 10:06:30",
+                "content": "<p>True engineer respect the language, and its best practices. It is very simple to us: Use semicolon in JS. If it bothers that much then do CoffeeScript.<\/p>\n\n<p>IMHO there are three types of people on this topic: language maintainers, celebrities, and engineers. Most people are engineers who follow best practices.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12566,
+                "name": "Chris Maunder",
+                "url": "http:\/\/www.codeproject.com",
+                "date": "2012-05-03 10:21:53",
+                "content": "<p>It&#8217;s rare to see a post about someone else&#8217;s mistake being written in such a considerate manner.<\/p>\n\n<p>The culture of Ego and Superiority is a little out of control with so many wanting to appear by way of making others appear less.<\/p>\n\n<p>We all started out not knowing how things work, and as technology progresses we continually find ourselves in unfamiliar territory. Why not, as you say, work toward making it clearer and safer for those beginning instead of insisting on perfection from the start?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12567,
+                "name": "Jonathan Brown",
+                "url": "",
+                "date": "2012-05-03 11:28:56",
+                "content": "<p>Am I the only one who noticed that this blog about &#8220;best practices&#8221; is so skinny it only takes up 25% on my monitor?<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12575,
+                "name": "mbriggs",
+                "url": "http:\/\/mattbriggs.net",
+                "date": "2012-05-03 13:47:29",
+                "content": "<p>If you do not teach the rules of ASI, that means your student will have a nightmarish time debugging the extremely confusing error that happens as a result. At least if you understand the problem, you have a chance in hell of thinking about it when you hit it, and if you do enough javascript you WILL hit a point where you have to debug it.<\/p>\n\n<p>For those who claim NPM style is about ego, it is not. It is about recognizing that there is a easy to make and hard to detect problem in the language with regards to semi colons and commas, and is designed to make that problem hard to make and easy to detect. If you use NPM style, chances are you will not ever be bitten by semicolon or comma issues. If you don&#8217;t use NPM style, chances are you will. The cost of NPM style is learning. That is pretty much all there is to say on the matter.<\/p>\n\n<p>Lastly, it is strange that nobody seems to care about comma first, but everyone freaks out over semicolon first. That leads me to think that the majority of people complaining a) do not fully understand what they are railing against, and b) are taking the words of brandon eich (who says that npm seems to work really well for good devs, just isn&#8217;t a good idea for newbies) and doug crockford (who also recommends never using the &#8220;new&#8221; keyword) rather then using their own minds.<\/p>\n\n<p>At the end of the day, if you want to use semis, thats fine, I don&#8217;t care as long as you understand the choice you are making. Just don&#8217;t call me a hipster for taking extra measures to avoid two of the nastier pitfalls of the language.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12577,
+                "name": "Snark",
+                "url": "",
+                "date": "2012-05-03 13:58:57",
+                "content": "<p>This Isaac guy is the funniest thing I&#8217;ve come across since FSJ.\nFUD is good, if it stops people from writing stupid code until they get up to speed with a new language.\nMore importantly, swinging your dick does not make you an expert, nor does knowledge of syntax. Unless you think that &#8216;the interpreter doesn&#8217;t puke&#8217; is equivalent to good code. There is nothing in his offensive diatribe that actual suggests expertise beyond having actually read the specification.\nBeing a condescending asshole is not negated by saying &#8216;I&#8217;m not being a condescending asshole&#8217; however often you say it.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12589,
+                "name": "Tom DeGisi",
+                "url": "",
+                "date": "2012-05-03 19:24:52",
+                "content": "<p>Snark,<\/p>\n\n<p>Just because you read what Issac wrote as condescending does not mean Issac was feeling condescending when he wrote it.  It is more difficult to reflect ones mental state when one writes English than it is to write JavaScript.  For one thing, neither English nor our mental states have a readable spec. <img src=\"http:\/\/tomdale.net\/wp-includes\/images\/smilies\/icon_smile.gif\" alt=\":)\" class=\"wp-smiley\" \/> <\/p>\n\n<p>Yours,\nTom<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12828,
+                "name": "richard bucker",
+                "url": "http:\/\/richardbucker.com",
+                "date": "2012-05-08 08:58:17",
+                "content": "<p>The baser concept of best practices can be appreciated, however, the implementation is a farce. The idea of making the code&#8217;s concepts and implementation accesible to the maintainer is commendable but what best practices has evolved into bullying based on punctuation.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12917,
+                "name": "Ryan Sandridge",
+                "url": "",
+                "date": "2012-05-10 08:12:06",
+                "content": "<p>Can we please pick another name? Perhaps, &#8220;Generally Recommended Practices&#8221;, or &#8220;Generally Accepted Practices&#8221;, or something. Using the word &#8220;Best&#8221; implies there are no better practices&#8230; we might as well just stop trying to improve the craft, because we already discovered the best.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 12963,
+                "name": "David",
+                "url": "",
+                "date": "2012-05-11 08:38:27",
+                "content": "<p>I come from the Perl community which has gone through its own evolution over the last 20 years about best practices.<\/p>\n\n<p>Those in the non-semicolon camp seem to feel that if you don&#8217;t understand a language, you shouldn&#8217;t  be using it. That&#8217;s just doesn&#8217;t work in the real world. I have to track down bugs in Python, Ruby, Perl, JavaScript, PowerShell, and several other languages. I have to fix CSS issues. In some of those languages, I know the deep dark secrets and incantations. In others, I am a competent developer, but I don&#8217;t understand the underlying implementation. And in the last group, I&#8217;m just trying to hack my way through code and syntax. Yet, when a problem occurs, my company depends upon me to find the problem and fix it.<\/p>\n\n<p>My main concern is readability and maintenance. It&#8217;s nice you can write some hot code that experts like you can wow over. However, three months from now, a junior level programmer will have to make changes to your code and fix the issues that arise.<\/p>\n\n<p>There&#8217;s a difference between doing advanced coding and using a semantic trick that few people who actually use the language understand. I expect an expert in a language to write code that&#8217;s efficient, checks for various issues, AND is easy for others who have to maintain it to understand.<\/p>\n\n<p>The question isn&#8217;t whether semicolons are necessary or not. The question is what are you doing by eliminating semicolons. Are you writing a more efficient program? Is your program more easily understood? Will the lack of semicolons improve maintenance? Or are you just making the statement &#8220;I am an expert JavaScript programmer and you&#8217;re not!&#8221;<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 25765,
+                "name": "Hyprorway",
+                "url": "http:\/\/cheap-viagra-generic.com\/",
+                "date": "2012-12-30 12:43:32",
+                "content": "<p>You are absolutely right. In it something is and it is excellent idea. I support you.\n. <a href=\"http:\/\/cheap-viagra-generic.com\/#6523\" rel=\"nofollow\">http:\/\/cheap-viagra-generic.com\/#6523<\/a> &#8211; buy cheap viagra. to watch this\n cheap viagra 50 mg\n.<\/p>\n",
+                "parent": 0
+            }
+        ],
+        "attachments": [],
+        "comment_count": 36,
+        "comment_status": "closed",
+        "custom_fields": {}
+    },
+    {
+        "id": 578,
+        "type": "post",
+        "slug": "ember-js-resources",
+        "url": "http:\/\/tomdale.net\/2012\/02\/ember-js-resources\/",
+        "status": "publish",
+        "title": "Ember.js Resources",
+        "title_plain": "Ember.js Resources",
+        "content": "<p>I come across a lot of really interesting links related to Ember.js, but often don&#8217;t have anywhere useful to put them, or don&#8217;t really know how to describe the thread that holds them all together. So here is my linkdump post, which I will update as I remember things, that contains useful stuff for Ember developers.<\/p>\n\n<p><a href=\"https:\/\/github.com\/emberjs\/todos\">Ember.js Todos<\/a>\n<br \/>\nSample todo application. Particularly useful for its heavily-commented Assetfile. Great starting point if you&#8217;d like to know how to use Rake::Pipeline together with Ember.<\/p>\n\n<p><a href=\"http:\/\/gmoeck.github.com\/2011\/03\/10\/sproutcore-mvc-vs-rails-mvc.html\">SproutCore MVC vs. Rails MVC<\/a><br \/>\nWritten back in the SproutCore 2.0 days, Greg Moeck&#8217;s seminal post describes how, despite the same name, Rails&#8217; concept of MVC differs radically from MVC systems like SproutCore, Ember.js, and Cocoa.<\/p>\n\n<p><a href=\"https:\/\/github.com\/interline\/ember-skeleton\">Ember Skeleton<\/a><br \/>\nBoilerplate for starting a new Ember.js project, using Rake::Pipeline to assemble and serve your files.<\/p>\n\n<p><a href=\"http:\/\/www.cerebris.com\/blog\/2012\/01\/24\/beginning-ember-js-on-rails-part-1\/\">Beginning Ember.js on Rails<\/a><br \/>\nDan Gebhart&#8217;s three-part tutorial, which eases you gently into using Ember.js with a Rails backend. Resources are loaded with <a href=\"https:\/\/github.com\/cerebris\/ember-rest\">Ember REST<\/a>, and assets are managed with Rails&#8217; asset pipeline.<\/p>\n\n<p><a href=\"http:\/\/yehudakatz.com\/2011\/06\/11\/using-sproutcore-2-0-with-jquery-ui\/\">Using SproutCore 2.0 with jQuery UI<\/a><br \/>\nYehuda&#8217;s article on using jQuery UI with what was then SproutCore 2.0. Note that, if following along with the code samples, there are a few changes that you will need to make that are pointed out in the comments at the bottom. While useful specifically for people wanting to use jQuery UI, the article is more broadly useful as it serves as a template for anyone who wants to write a bridge between Ember.js and non-bindings-aware JavaScript libraries.<\/p>\n\n<p>More soon\u2026<\/p>\n",
+        "excerpt": "<p>I come across a lot of really interesting links related to Ember.js, but often don&#8217;t have anywhere useful to put them, or don&#8217;t really know how to describe the thread that holds them all together. So here is my linkdump post, which I will update as I remember things, that contains useful stuff for Ember [&hellip;]<\/p>",
+        "date": "2012-02-06 11:22:44",
+        "modified": "2013-01-23 22:37:07",
+        "categories": [
+            {
+                "id": 1,
+                "slug": "general",
+                "title": "General",
+                "description": "",
+                "parent": 0,
+                "post_count": 14
+            }
+        ],
+        "tags": [],
+        "author": {
+            "id": 2,
+            "slug": "tomdale",
+            "name": "Tom Dale",
+            "first_name": "Tom",
+            "last_name": "Dale",
+            "nickname": "tomdale",
+            "url": "",
+            "description": ""
+        },
+        "comments": [
+            {
+                "id": 8875,
+                "name": "JP",
+                "url": "http:\/\/twitter.com\/jphpsf",
+                "date": "2012-02-06 19:02:57",
+                "content": "<p>As I&#8217;ve been looking into how to integrate Ember.js in our current stack, I&#8217;ve been saving some links on the topic.<\/p>\n\n<p>Here is a couple more for your list:<\/p>\n\n<p>1) To see Ember.js live, check out Travis CI (<a href=\"http:\/\/travis-ci.org\/\" rel=\"nofollow\">http:\/\/travis-ci.org\/<\/a>). The cool thing is that it&#8217;s open source on github (<a href=\"https:\/\/github.com\/travis-ci\/travis-ci\/tree\/master\/app\/assets\/javascripts\" rel=\"nofollow\">https:\/\/github.com\/travis-ci\/travis-ci\/tree\/master\/app\/assets\/javascripts<\/a>)<\/p>\n\n<p>2) If you need to translate your app, Zendesk open sourced their i18n helper (<a href=\"https:\/\/github.com\/zendesk\/ember-i18n\" rel=\"nofollow\">https:\/\/github.com\/zendesk\/ember-i18n<\/a>)<\/p>\n\n<p>Cheers<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 8876,
+                "name": "JP",
+                "url": "http:\/\/twitter.com\/jphpsf",
+                "date": "2012-02-06 19:05:17",
+                "content": "<p>Another good one (but slightly out of date &#8211; using SC2.0 and Strobe API): the new twitter client from @ebryn at <a href=\"https:\/\/github.com\/ebryn\/newtwitter\" rel=\"nofollow\">https:\/\/github.com\/ebryn\/newtwitter<\/a><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 9029,
+                "name": "Bijan",
+                "url": "",
+                "date": "2012-02-26 11:24:33",
+                "content": "<p>Awesome.<\/p>\n\n<p>I just came to check this out after watching the Lunch Talk at Carbon Five (<a href=\"http:\/\/vimeo.com\/36992934\" rel=\"nofollow\">http:\/\/vimeo.com\/36992934<\/a>).<\/p>\n\n<p>I&#8217;ve been hearing about Ember.js all over the place and how fantastic it is, but couldn&#8217;t find any solid tutorials or resources on how to get started. I&#8217;m looking forward to diving in. Hopefully I&#8217;ll learn to swim.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 9346,
+                "name": "Dan Gebhardt",
+                "url": "http:\/\/www.cerebris.com",
+                "date": "2012-03-07 08:54:10",
+                "content": "<p>Tom &#8211; thanks for linking to my Ember.js on Rails series.<\/p>\n\n<p>I also just posted &#8220;Understanding Ember.Object&#8221; (<a href=\"http:\/\/www.cerebris.com\/blog\/2012\/03\/06\/understanding-ember-object\/\" rel=\"nofollow\">http:\/\/www.cerebris.com\/blog\/2012\/03\/06\/understanding-ember-object\/<\/a>). To get the most out of Ember, I think it&#8217;s key to thoroughly understand its object model. And unlike most frameworks, the deeper I dig into Ember, the more I appreciate it <img src=\"http:\/\/tomdale.net\/wp-includes\/images\/smilies\/icon_smile.gif\" alt=\":)\" class=\"wp-smiley\" \/> <\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 9754,
+                "name": "Bertrand Mansion",
+                "url": "",
+                "date": "2012-03-10 16:59:40",
+                "content": "<p>Ember.js is spectacular. But it would be nice not to focus too much on Rails, Rake,  Rake::Pipeline, Spade and all those techs for projects targeted at newcomers. It adds a layer of complexity. If you want to make newbies task easier, get rid of everything external in the examples so that tutorial project don&#8217;t have any other dependencies than Ember.<\/p>\n\n<p>Then, you can create dedicated branches that show how to use Ember with Rake::Pipeline or Spade for people interested in these techs.<\/p>\n\n<p>Personally, I don&#8217;t use Ruby and never heard of Rake::Pipeline before, but I&#8217;d very much like to learn Ember and later use it with Nginx OpenResty and Lua.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 9852,
+                "name": "Luke Melia",
+                "url": "http:\/\/www.lukemelia.com",
+                "date": "2012-03-11 20:44:17",
+                "content": "<p>With Yehuda&#8217;s help, I updated the &#8220;Using SproutCore 2.0 with jQuery UI&#8221; post and sample code to use Ember. You can find it at <a href=\"http:\/\/www.lukemelia.com\/blog\/archives\/2012\/03\/10\/using-ember-js-with-jquery-ui\/\" rel=\"nofollow\">http:\/\/www.lukemelia.com\/blog\/archives\/2012\/03\/10\/using-ember-js-with-jquery-ui\/<\/a><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 10305,
+                "name": "andy matthews",
+                "url": "http:\/\/andymatthews.net",
+                "date": "2012-03-16 13:31:15",
+                "content": "<p>I&#8217;m a relative newcomer to MVC frameworks in general and new to Ember as well. I wrote an article helping people get started using Ember. Very basic, but useful.<\/p>\n\n<p><a href=\"http:\/\/andymatthews.net\/read\/2012\/03\/07\/Getting-Started-With-EmberJS\" rel=\"nofollow\">http:\/\/andymatthews.net\/read\/2012\/03\/07\/Getting-Started-With-EmberJS<\/a><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 11286,
+                "name": "Paul Irish",
+                "url": "http:\/\/paulirish.com",
+                "date": "2012-04-05 22:41:34",
+                "content": "<p>Come across recently:<\/p>\n\n<p><a href=\"http:\/\/jzajpt.github.com\/ember-bootstrap\/\" rel=\"nofollow\">http:\/\/jzajpt.github.com\/ember-bootstrap\/<\/a> A set of UI elements styled using Twitter Boostrap toolkit to use with Ember.js<\/p>\n\n<p><a href=\"https:\/\/github.com\/evome\/ember-bootstrap\" rel=\"nofollow\">https:\/\/github.com\/evome\/ember-bootstrap<\/a> same as above.. <img src=\"http:\/\/tomdale.net\/wp-includes\/images\/smilies\/icon_smile.gif\" alt=\":)\" class=\"wp-smiley\" \/> <\/p>\n\n<p><a href=\"https:\/\/github.com\/thomasboyt\/Ember-Bootstrap\" rel=\"nofollow\">https:\/\/github.com\/thomasboyt\/Ember-Bootstrap<\/a> ember with grunt.js<\/p>\n\n<p><a href=\"https:\/\/github.com\/charlesjolley\/ember-brunch\" rel=\"nofollow\">https:\/\/github.com\/charlesjolley\/ember-brunch<\/a> brunch.io integration<\/p>\n\n<p>AMD + Ember: \n* <a href=\"https:\/\/github.com\/ud3323\/bpm\/wiki\/Using-BPM-with-Ember\" rel=\"nofollow\">https:\/\/github.com\/ud3323\/bpm\/wiki\/Using-BPM-with-Ember<\/a>\n* <a href=\"https:\/\/bitbucket.org\/cprecourt\/ember-requirejs-example\/src\" rel=\"nofollow\">https:\/\/bitbucket.org\/cprecourt\/ember-requirejs-example\/src<\/a><\/p>\n\n<p><a href=\"http:\/\/ember-docs.herokuapp.com\/\" rel=\"nofollow\">http:\/\/ember-docs.herokuapp.com\/<\/a> for docs<\/p>\n\n<p>(Surely this will be flagged for spam&#8230;)<\/p>\n\n<p>Also I would love to see a twitter\/tumblr that is maintaining a stream of new ember resources. \nRight now everyone is piecing it together themselves.<\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 11288,
+                "name": "Paul Irish",
+                "url": "http:\/\/paulirish.com",
+                "date": "2012-04-05 23:54:44",
+                "content": "<p><a href=\"http:\/\/codebrief.com\/\" rel=\"nofollow\">http:\/\/codebrief.com\/<\/a> has 4 excellent posts on ember recently<\/p>\n\n<p>And plenty of activity at SO: <a href=\"http:\/\/stackoverflow.com\/questions\/tagged\/emberjs?sort=votes\" rel=\"nofollow\">http:\/\/stackoverflow.com\/questions\/tagged\/emberjs?sort=votes<\/a><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 15269,
+                "name": "Andy Matthews",
+                "url": "http:\/\/andymatthews.net",
+                "date": "2012-06-01 05:06:30",
+                "content": "<p>Adobe released an article on DevNet about Ember.js<\/p>\n\n<p><a href=\"http:\/\/adobe.com\/devnet\/html5\/articles\/flame-on-a-beginners-guide-to-emberjs.html\" rel=\"nofollow\">http:\/\/adobe.com\/devnet\/html5\/articles\/flame-on-a-beginners-guide-to-emberjs.html<\/a><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 16315,
+                "name": "Rishabh Rao",
+                "url": "http:\/\/rishabhsrao.github.com",
+                "date": "2012-06-14 22:53:21",
+                "content": "<p>Web App Code Lab has a good resource for Ember.js: <a href=\"http:\/\/petelepage.com\/webapp-codelab\" rel=\"nofollow\">http:\/\/petelepage.com\/webapp-codelab<\/a><\/p>\n",
+                "parent": 0
+            },
+            {
+                "id": 18641,
+                "name": "Thiago Santos",
+                "url": "",
+                "date": "2012-07-11 12:47:26",
+                "content": "<p>I&#8217;m a .Net developer and I&#8217;m trying to learn Ember on my own. I&#8217;ve created a project in GitHub if anyone is interested in contributing\/help so (me and) other people can benefit from it, here&#8217;s the link <a href=\"https:\/\/github.com\/MilkyWayJoe\/ember-router-with-webapi\" rel=\"nofollow\">https:\/\/github.com\/MilkyWayJoe\/ember-router-with-webapi<\/a><\/p>\n",
+                "parent": 0
+            }
+        ],
+        "attachments": [],
+        "comment_count": 12,
+        "comment_status": "closed",
+        "custom_fields": {}
+    },
+    {
+        "id": 573,
+        "type": "post",
+        "slug": "dizzying-but-invisible-depth",
+        "url": "http:\/\/tomdale.net\/2012\/02\/dizzying-but-invisible-depth\/",
+        "status": "publish",
+        "title": "Dizzying But Invisible Depth",
+        "title_plain": "Dizzying But Invisible Depth",
+        "content": "<p>Jean-Baptiste Queru&#8217;s remarkable piece on the sheer amount of abstraction mankind has built to be able to load the Google homepage:<\/p>\n\n<blockquote>For non-technologists, this is all a black box. That is a great success of technology: all those layers of complexity are entirely hidden and people can use them without even knowing that they exist at all. That is the reason why many people can find computers so frustrating to use: there are so many things that can possibly go wrong that some of them inevitably will, but the complexity goes so deep that it&#8217;s impossible for most users to be able to do anything about any error.<\/blockquote>\n\n<p><a href=\"https:\/\/plus.google.com\/112218872649456413744\/posts\/dfydM2Cnepe\">Dizzying but invisible depth<\/a><\/p>\n",
+        "excerpt": "<p>Jean-Baptiste Queru&#8217;s remarkable piece on the sheer amount of abstraction mankind has built to be able to load the Google homepage: For non-technologists, this is all a black box. That is a great success of technology: all those layers of complexity are entirely hidden and people can use them without even knowing that they exist [&hellip;]<\/p>",
+        "date": "2012-02-04 23:37:20",
+        "modified": "2013-01-23 22:37:08",
+        "categories": [
+            {
+                "id": 1,
+                "slug": "general",
+                "title": "General",
+                "description": "",
+                "parent": 0,
+                "post_count": 14
+            }
+        ],
+        "tags": [],
+        "author": {
+            "id": 2,
+            "slug": "tomdale",
+            "name": "Tom Dale",
+            "first_name": "Tom",
+            "last_name": "Dale",
+            "nickname": "tomdale",
+            "url": "",
+            "description": ""
+        },
+        "comments": [],
+        "attachments": [],
+        "comment_count": 0,
+        "comment_status": "closed",
+        "custom_fields": {}
+    }
+]}
