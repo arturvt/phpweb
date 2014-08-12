@@ -1,20 +1,20 @@
 
-	var source   = $("#entry-template").html();
-	var template = Handlebars.compile(source);
-	
-	var context = {title: "My New Post", body: "This is my first post!"}
-	var html    = template(context);
+var source   = $("#entry-template").html();
+var template = Handlebars.compile(source);
 
-	$('#result').append(html);
+var context = {title: "My New Post", body: "This is my first post!"}
+var html    = template(context);
 
-	var context = {
-		title: "All about <p> Tags",
-		body: "This is a post about &lt;p&gt; tags</p>"
-	}
+$('#result').append(html);
 
-	var html    = template(context);
+var context = {
+    title: "All about <p> Tags",
+    body: "This is a post about &lt;p&gt; tags</p>"
+}
 
-	$('#other').append(html);
+var html    = template(context);
+
+$('#other').append(html);
 
 
 var listContent = {
@@ -43,51 +43,79 @@ var html = template(listContent);
 
 $('#list').append(html);
 
+var requests = 0, pages = 0;
 
 
-$.ajax({
-    type: "POST",
-    url: "./backend/php/request.php?q=",
+loadJSON();
 
-    beforeSend: function() {
-       $("#footer").css("visibility", "visible");
-    },
 
-    success: function successExpandedPortfolio(response) {
-        console.log('Success!');
-        console.log('Status: ', response.status);
-        console.log('Pages: ', response.pages);
-        var data = response;
-        var items = [];
 
-        console.log(response);
+function loadJSON() {
 
-        $.each(data.people, function (key, val){
-            items.push("<li>"+val.firstName+' ' + val.lastName+"</li>");
-        });
-        $('#list').append("<h1>More bellow</h1>");
-        $( "<ul/>", {
-            "class": "my-new-list",
-            html: items.join( "" )
-        }).appendTo( "body" );$('#list').append();
-        $("#footer").css("visibility", "hidden");
+    $.ajax({
+        type: "POST",
+        url: "./backend/php/request.php?q=",
 
-    },
+        beforeSend: function() {
+            $("#footer").css("visibility", "visible");
+        },
 
-    error: function errorExpandedPortfolio(response) {
-        console.log('Error! Response: ', response);
-        $("#footer").css("background-color", "red").text("Error loading Json");
+        success: function successExpandedPortfolio(response) {
+            console.log('Success!');
+            console.log('Status: ', response.status);
+            console.log('Pages: ', response.pages);
 
-    },
+            pages = response.pages;
+            requests++;
 
-    timeout: function timeoutReached(response) {
-        console.log(response);
-    },
+            var data = response;
+            var items = [];
 
-    complete: function end() {
-        console.log('Complete!');
+            console.log(response);
+
+            $.each(data.people, function (key, val){
+                items.push("<li>"+val.firstName+' ' + val.lastName+"</li>");
+            });
+            if (requests == 1) {
+                $('#list').append( "<h1>More bellow</h1>");
+            }
+
+            $( "<ul/>", {
+                "class": "my-new-list",
+                html: items.join( "" )
+            }).appendTo( "body" );$('#list').append();
+            $("#footer").css("visibility", "hidden");
+
+        },
+
+        error: function errorExpandedPortfolio(response) {
+            console.log('Error! Response: ', response);
+            $("#footer").css("background-color", "red").text("Error loading Json");
+
+        },
+
+        timeout: function timeoutReached(response) {
+            console.log(response);
+        },
+
+        complete: function end() {
+            console.log('Complete!');
+        }
+    }).then(function(){
+        loadMore()
+    });
+
+}
+
+function loadMore() {
+    console.log('Requests: ', requests, ' pages: ', pages);
+    if (requests < pages) {
+        loadJSON();
+    } else {
+        return;
     }
-});
+}
+
 
 
 

@@ -24,7 +24,7 @@ class Requester {
         foreach ($this->json_data as $key => $value) {
             switch ($key) {
                 case 'pages':
-                    $this->json_data[$key]++;
+                    $this->json_data[$key]--;
                     $this->isOK = true;
                     break;
                 case 'people':
@@ -57,6 +57,7 @@ $response = 'File not found!';
 $req = new Requester($file);
 
 $req->returnValue();
+sleep(3);
 
 //if (file_exists($file)) {
 //    $response = 'File found!';
