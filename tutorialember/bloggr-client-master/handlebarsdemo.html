@@ -2,41 +2,44 @@
 <html>
 <head>
   <title>Handlebars demo</title>
-</head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"></head>
 <body>
 
-<h1>Bellow Something!</h1>
+<div class="main-div">
+    <h1>Bellow Something!</h1>
 
-<script id="entry-template" type="text/x-handlebars-template">
-<div class="entry">
-  <h1>{{title}}</h1>
-  <div class="body">
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry">
+            <h1>{{title}}</h1>
+            <div class="body">
     {{{body}}}
-  </div>
-</div>
-</script>
+            </div>
+        </div>
+    </script>
 
-<script id="list-template" type="text/x-handlebars-template">
+    <script id="list-template" type="text/x-handlebars-template">
 	{{#list people}}{{firstName}} {{lastName}}{{/list}}
 </script>
 
 
-<div id="result"></div>
+    <div id="result"></div>
 
-<div id="other"></div>
+    <div id="other"></div>
 
-<div id="list">
-	<h1>Listing users</h1>
+    <div id="list">
+        <h1>Listing users</h1>
+    </div>
+
+    <div id="footer">
+        Loading contents...
+    </dib>
+
 </div>
 
-<div class="phptest" style="color: blue">
-    <h1>Here some PHP things</h1>
-    <?php
-     $file = "json/content.json";
-     echo file_exists($file)? "yes":"no";
-     echo "<h2>HUGE</h2>";
-    ?>
-</div>
+
 
  <script src="js/libs/jquery-v1.11.1.js"></script>
  <script src="js/libs/handlebars-v1.3.0.js"></script>

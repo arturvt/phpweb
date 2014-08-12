@@ -1,6 +1,10 @@
-{ "people": [
+{"status": "ok", "pages": 2,
+    "people": [
         {"firstName": "Yehuda", "lastName": "Katz"},
         {"firstName": "Carl", "lastName": "Lerche"},
-        {"firstName": "AlanNN", "lastName": "Johnson"}
+        {"firstName": "Carl", "lastName": "Lerche"},
+        {"firstName": "Carl", "lastName": "Lerche"},
+        {"firstName": "AlanNNNNN", "lastName": "Johnson"}
+
     ]
 }
