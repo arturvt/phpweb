@@ -16,22 +16,12 @@ $(document).ready(function() {
         location.href="pages/responsive.php";
     });
 
-});
+    $('#ember-page').click(function () {
+        location.href="tutorialember/starter-kit-1.5.1/index.html";
+    });
 
+    $('#ember-tutorial').click(function () {
+        location.href="tutorialember/bloggr-client-master/index.html";
+    });
 
-
-$.ajax({
-    url: "/api/getWeather",
-    data: {
-        zipcode: 97201
-    },
-    success: function( data ) {
-        $( "#weather-temp" ).html( "<strong>" + data + "</strong> degrees" );
-    },
-    fail: function() {
-        $( "#weather-temp" ).html( "<strong>" + "No weather" + "</strong> degrees" );
-    },
-    default: function() {
-        $( "#weather-temp" ).html( "<strong>" + 'Default nothing' + "</strong> degrees" );
-    }
 });
