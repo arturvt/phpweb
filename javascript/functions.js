@@ -24,4 +24,21 @@ $(document).ready(function() {
         location.href="tutorialember/bloggr-client-master/index.html";
     });
 
+    $('#symfony-link').click(function() {
+                location.href="php/index.php";
+    });
+
+    $('#symfony').click(function() {
+
+
+        $.get(
+            "php/request.php",
+            {foo : 'Artur'},
+            function(data) {
+                alert('page content: ' + data);
+            }
+        );
+
+    });
+
 });
