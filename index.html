@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Initial page.</title>
+    <script src="phpweb/javascript/jquery-1.11.1.js"></script>
+<script src="phpweb/javascript/functions.js"></script>
+</head>
+<body>
+<div id="homepage-wrapper">
+    <h1>Hello world from HTML5</h1>
+    <p> Loading Jquery....<span>.....</span></p>
+    <?%php
+        echo "Hello from PHP.";
+     ?>
+</div>
+
+<div id="vacations-wrapper">
+    <h1>Vacation list</h1>
+    <ul id="vacations">
+        <li class="vacation america">
+            <h2>San Francisco, California</h2>
+            <span class="details">$400</span>
+        </li>
+        <li class="vacation europe">
+            <a id="europe" href="pages/europe.html"><h2>London, England</h2></a>
+            <span class="details">$400</span>
+        </li>
+        <li class="vacation asia">
+            <a id="asia" href="pages/asia.html" > <h2>Shanghai, China</h2></a>
+            <span class="details">$400</span>
+        </li>
+    </ul>
+</div>
+
+<div id="vacations-other-list">
+    <h1>Bellow other list</h1>
+</div>
+<div id="button-div">
+    <button id="button-function">function</button>
+</div>
+
+
+
+</body>
+
+</html>

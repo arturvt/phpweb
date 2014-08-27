@@ -16,6 +16,28 @@ body {
     overflow: hidden;
 }
 
+.box {
+  width: 200px;
+  height: 100px;
+  background: #FFF;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  -webkit-transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 500ms;
+  transform: translate(0, 0);
+  transition: transform 500ms;
+  will-change: transform;
+  text-align: center;
+}
+
+.box.move {
+  -webkit-transform: translate(100px, 100px);
+  transform: translate(100px, 100px);
+}
+
+.box h2 {
+  color: red;
+}
+
 #vacations-wrapper {
     width: 400px;
     height: 500px;
@@ -31,6 +53,7 @@ body {
 
 h1 {
     color: blue;
+    font-family: Helvetica;
 }
 
 p {
