@@ -29,8 +29,6 @@ $(document).ready(function() {
     });
 
     $('#symfony').click(function() {
-
-
         $.get(
             "php/request.php",
             {foo : 'Artur'},

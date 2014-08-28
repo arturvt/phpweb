@@ -6,24 +6,29 @@
  * Time: 12:44 PM
  */
 
-switch($_SERVER['REQUEST_METHOD'])
-{
-    case 'GET': {
-        $the_request = &$_GET;
-        break;
-    }
-    case 'POST':{
-        $the_request = &$_POST;
-        break;
-    }
-    default: {
-        $the_request = "nothing";
-        break;
-    }
-}
+// switch($_SERVER['REQUEST_METHOD'])
+// {
+//     case 'GET': {
+//         $the_request = &$_GET;
+//         break;
+//     }
+//     case 'POST':{
+//         $the_request = &$_POST;
+//         break;
+//     }
+//     default: {
+//         $the_request = "nothing";
+//         break;
+//     }
+// }
 
-$request = 'User request: '.$_REQUEST['foo'];
+$uri = $_SERVER['REQUEST_URI'];
+
+header('Content-type: text/html');
+
+$request_foo = 'User request: '.$_REQUEST['foo'];
+$request_test = 'User request: '.$_REQUEST['test'];
 
 
 
-echo $request;
+echo $request_foo.' --- '.$request_test . ' URI : '. $uri;
