@@ -2,3 +2,18 @@
 /.idea/workspace.xml
 
 /.idea/phpweb.iml
+
+/web/bundles/
+/app/bootstrap.php.cache
+/app/cache/*
+/app/config/parameters.yml
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+/build/
+vendor/
+/vendor/
+/bin/
+/composer.phar
+composer.phar
+composer.lock
