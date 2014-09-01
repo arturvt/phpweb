@@ -1,5 +1,10 @@
 {
 	"require": {
-		"twig/twig": "1.*"
-		}
+		"twig/twig": "1.*",
+		"symfony/symfony": "2.5.*"
+		},
+
+	"autoload": {
+		"files":["php/model.php", "php/controllers.php"]
+	}	
 }

@@ -17,3 +17,4 @@ vendor/
 /composer.phar
 composer.phar
 composer.lock
+/composer.lock
