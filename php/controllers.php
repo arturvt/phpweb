@@ -1,19 +1,17 @@
 <?php 
 
-use Symfony\Component\HttpFoundation\Response;
-
 function list_action()
 {
     $posts = get_all_posts();
     $html = render_template('templates/list.php', array('posts' => $posts));
-    return new Response($html);
+    echo $html;
 
 }
 function show_action($id)
 {
     $post = get_post_by_id($id);
 	$html = render_template('templates/show.php', array('post' => $post));
-	return new Response($html);
+	echo $html;
 }
 
 function render_template($path, array $args)

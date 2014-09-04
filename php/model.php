@@ -5,9 +5,12 @@
 
         $id = intval($id);
         $query = 'SELECT cur_timestamp, title FROM post WHERE id = '.$id;
-        $result = mysql_query($query);
-        $row = mysql_fetch_assoc($result);
+        $result = $link->query($query);
 
+
+        $row = $result->fetch_assoc();
+
+        $result->free();
         close_database_connection($link);
 
         return $row;
@@ -17,24 +20,35 @@
     function get_all_posts()
     {
         $link = open_database_connection();
-        $result = mysql_query('SELECT id, title FROM post', $link);
+        $query = 'SELECT id, title FROM post';
+
+        $sql = <<<SQL
+                SELECT id, title
+                FROM `post`
+SQL;
+
+        $result = $link->query($sql);
+
         $posts = array();
-        while ($row = mysql_fetch_assoc($result)) {
+        while ($row = $result->fetch_assoc()) {
             $posts[] = $row;
         }
+        
+        $result->free();
         close_database_connection($link);
-
         return $posts;
     }
 
     function open_database_connection()
     {
-        $link = mysql_connect('localhost', 'root', 'newpwd');
-        mysql_select_db('blog_db', $link);
+        $link = new mysqli('localhost', 'root', 'newpwd', 'blog_db');
+        if ($link->connect_errno) {
+            die('Unable to connect to database. Reason: [' . $link->connect_error . ']');
+        } 
         return $link;
     }
     function close_database_connection($link)
     {
-        mysql_close($link);
+        $link->close();
     }
 ?>

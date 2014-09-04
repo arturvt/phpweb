@@ -4,7 +4,6 @@ require_once 'model.php';
 require_once 'controllers.php';
 // route the request internally
 $uri = $_SERVER['REQUEST_URI'];
-
 	if ('/php/index.php' == $uri) {
 		list_action();
 	} elseif (strpos($uri, '/php/index.php/show?') !== false && isset($_GET['id'])) {
@@ -25,7 +24,4 @@ $uri = $_SERVER['REQUEST_URI'];
 		echo '</body></html>';
 	}
 
-	// $posts = get_all_posts();
-
-	// require 'templates/list.php';
 ?>
